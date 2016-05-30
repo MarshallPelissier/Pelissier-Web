@@ -1,0 +1,68 @@
+/*content centered on page*/
+
+div{
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;
+}
+.centered{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 35vw;
+  height: 35vw;
+}
+.thumbnail-container{
+  width:35vw;
+  height:15vw;
+  background-color:grey;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2vw;
+  padding-top: 4vw;
+}
+.icon-box{
+  width:7vw;
+  height:7vw;
+  background-color: lightblue;
+  transition: height .25s,background-color .25s linear;
+}
+.icon-box:hover{
+  cursor:pointer;
+}
+.icon-box-open{
+  height:11vw;
+  background-color: yellow;
+}
+.info{
+  width: 33vw;
+  height: 0px;
+  background-color:green;
+  transition: height .25s;
+  margin-left:1vw;
+}
+.info-open{
+  height:19vw;
+}
+.content{
+  width:35vw;
+  height:0px;
+  background-color: grey;
+  transition: height .25s;
+}
+.content-open{
+  height:20vw;
+  padding:1vw;
+  padding-left:0px;
+  padding-top:0px;
+}
+#TN-2-info{
+  background-color:pink;
+}
+#TN-3-info{
+  background-color:blue;
+}
