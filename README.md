@@ -1,3 +1,3 @@
-# Video Locale
+# Pelissier Web
 
-CSC 415N Software Engineering Project at Seattle Pacific University
+Personal website for Marshall Pelissier
