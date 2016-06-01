@@ -4,10 +4,15 @@ div{
  -webkit-box-sizing: border-box;
  -moz-box-sizing: border-box;
  box-sizing: border-box;
+ font-family: 'Roboto Mono';
+}
+body{
+  background-color: hsl(0,0%,100%);
 }
 .centered{
   position: absolute;
   margin: auto;
+  margin-top: 40vh;
   top: 0;
   right: 0;
   bottom: 0;
@@ -15,10 +20,24 @@ div{
   width: 35vw;
   height: 35vw;
 }
+.name-label{
+  position: absolute;
+  margin: auto;
+  margin-top: 30vh;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 5vw;
+  font-size: 34pt;
+  color: hsl(0,100%,15%);
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+}
 .thumbnail-container{
   width:35vw;
   height:15vw;
-  background-color:grey;
   display:flex;
   flex-direction: row;
   justify-content: space-around;
