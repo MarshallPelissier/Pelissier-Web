@@ -25,35 +25,35 @@ body{
 .name-label{
   margin-top: 10vh;
   height: 5vw;
-  font-size: 24pt;
+  font-size: 34pt;
   color: hsl(0,100%,15%);
   text-align: center;
   vertical-align: middle;
   display: table-cell;
 }
-.link-container{
+.thumbnail-container{
   margin:auto;
   margin-top: 10vh;
-  width:40vw;
+  width:35vw;
+  height:15vw;
   display:flex;
   flex-direction: row;
   justify-content: space-around;
   padding: 2vw;
+  padding-top: 4vw;
 }
-.link-box{
+.icon-box{
   width:7vw;
   height:7vw;
   background-color: lightblue;
-  outline:solid;
-  outline-color: transparent;
-  -webkit-transition: outline-color .7s;
-  -moz-transition: outline-color .7s;
-  -o-transition: outline-color .7s;
-  transition: outline-color .7s;
+  transition: height .25s,background-color .25s linear;
 }
-.link-box:hover{
+.icon-box:hover{
   cursor:pointer;
-  outline-color: lightblue;
+}
+.icon-box-open{
+  height:11vw;
+  background-color: yellow;
 }
 .info{
   width: 33vw;
