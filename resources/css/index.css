@@ -17,15 +17,17 @@ body{
 .picture{
   margin: auto;
   margin-top: 20vh;
+  box-shadow: 0 0 0px 3px hsl(0, 40%, 50%);
   border:solid;
-  background-color: hsl(0,0%,100%);
+  border-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  background-color: hsl(0,0%,50%);
   width: 128px;
   height: 128px;
 }
 .name-label{
   margin-top: 10vh;
-  height: 5vw;
-  font-size: 24pt;
+  font-size: 20pt;
   color: hsl(0,100%,15%);
   text-align: center;
   vertical-align: middle;
@@ -33,23 +35,28 @@ body{
 }
 .link-container{
   margin:auto;
-  margin-top: 10vh;
+  margin-top: 5vh;
+  border: solid;
+  border-color: hsl(0, 40%, 50%);
   width:40vw;
   display:flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 2vw;
+  padding: 1vw;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
 }
 .link-box{
   width:7vw;
   height:7vw;
+  display: block;
   background-color: lightblue;
   outline:solid;
   outline-color: transparent;
-  -webkit-transition: outline-color .7s;
-  -moz-transition: outline-color .7s;
-  -o-transition: outline-color .7s;
-  transition: outline-color .7s;
+  -webkit-transition: outline-color .25s;
+  -moz-transition: outline-color .25s;
+  -o-transition: outline-color .25s;
+  transition: outline-color .25s;
 }
 .link-box:hover{
   cursor:pointer;
