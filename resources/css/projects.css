@@ -9,75 +9,72 @@ div{
 body{
   background-color: hsl(0,0%,100%);
 }
-.column{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-.picture{
-  margin: auto;
-  margin-top: 20vh;
-  border:solid;
-  background-color: hsl(0,0%,100%);
-  width: 128px;
-  height: 128px;
-}
-.name-label{
-  margin-top: 10vh;
-  height: 5vw;
-  font-size: 34pt;
-  color: hsl(0,100%,15%);
-  text-align: center;
-  vertical-align: middle;
-  display: table-cell;
-}
-.thumbnail-container{
+.content-container{
   margin:auto;
-  margin-top: 10vh;
+  margin-top: 20vh;
   width:35vw;
-  height:15vw;
+  padding: 0px;
+}
+.icon-container{
+  margin:auto;
   display:flex;
   flex-direction: row;
-  justify-content: space-around;
-  padding: 2vw;
-  padding-top: 4vw;
+  justify-content: space-between;
+  padding: 1.25vw;
+  padding-top: 1.25vw;
+  padding-bottom: 1.25vw;
 }
 .icon-box{
   width:7vw;
   height:7vw;
-  background-color: lightblue;
-  transition: height .25s,background-color .25s linear;
+  background-color: hsl(200, 40%, 50%);
+  box-shadow: 0 0 0px 0px hsl(200, 40%, 50%);
+  -webkit-transition: box-shadow .27s, background-color .27s linear;
+  -moz-transition: box-shadow .27s, background-color .27s linear;
+  -o-transition: box-shadow .27s, background-color .27s linear;
+  transition: box-shadow .27s, background-color .27s linear;
 }
 .icon-box:hover{
   cursor:pointer;
+  box-shadow: 0 0 0px 3px hsl(200, 40%, 50%);
 }
 .icon-box-open{
-  height:11vw;
-  background-color: yellow;
+  background-color: hsl(100, 40%, 50%);
 }
 .info{
-  width: 33vw;
+  margin-left: 1vw;
+  width: 32.9vw;
   height: 0px;
   background-color:green;
   transition: height .25s;
-  margin-left:1vw;
+  border: solid;
+  border-width: 0px;
+  border-color: hsl(200, 40%, 50%);
+  -webkit-transition: height .25s, border 0s linear .25s, background-color .25s linear;
+  -moz-transition: height .25s, border 0s linear .25s, background-color .25s linear;
+  -o-transition: height .25s, border 0s linear .25s, background-color .25s linear;
+  transition: height .25s, border 0s linear 0s, background-color .25s linear;
 }
 .info-open{
   height:19vw;
+  border-width: 3px;
 }
 .content{
   margin-left: auto;
   margin-right: auto;
   width:35vw;
   height:0px;
-  background-color: grey;
+  -webkit-transition: height .25s;
+  -moz-transition: height .25s;
+  -o-transition: height .25s;
   transition: height .25s;
 }
 .content-open{
   height:20vw;
-  padding:1vw;
+  padding-bottom:1vw;
   padding-left:0px;
   padding-top:0px;
+  padding-right: 1.1vw;
 }
 #TN-2-info{
   background-color:pink;

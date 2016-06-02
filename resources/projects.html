@@ -10,8 +10,11 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
-    <!-- Main Custom CSS -->
+    <!-- Index Custom CSS -->
     <link rel="stylesheet" href="css/index.css">
+
+    <!-- Project Custom CSS -->
+    <link rel="stylesheet" href="css/projects.css">
 
     <!-- Mono Roboto font -->
     <link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
@@ -22,32 +25,22 @@
   </head>
 
   <body background = "img/background.png">
-    <div class "container-fluid">
-      <div class="col-xs-1 col-sm-2 col-md-3 col-lg-3"></div>
 
-      <div class="col-xs-10 col-sm-8 col-md-6 col-lg-6 column">
-
-        <img src="img/background.png"class = "picture">
-
-        <div class = "name-label" style = "border:solid">
-          MARSHALL PELISSIER
-        </div>
-
-        <div class = "thumbnail-container"style = "border:solid">
-          <div class = "icon-box" id = "TN-1"></div>
-          <div class = "icon-box" id = "TN-2"></div>
-          <div class = "icon-box" id = "TN-3"></div>
-          <div class = "icon-box" id = "TN-4"></div>
-        </div>
-        <div class = "content">
-          <div class = "info" id = "TN-1-info"></div>
-          <div class = "info" id = "TN-2-info"></div>
-          <div class = "info" id = "TN-3-info"></div>
-          <div class = "info" id = "TN-4-info"></div>
-        </div>
+    <a href = "index.html"><div class = "icon-box"></div></a>
+    <div class = "panel panel-default content-container">
+      <div class = "panel-header icon-container">
+        <div class = "icon-box" id = "TN-1"></div>
+        <div class = "icon-box" id = "TN-2"></div>
+        <div class = "icon-box" id = "TN-3"></div>
+        <div class = "icon-box" id = "TN-4"></div>
+      </div>
+      <div class = "panel-content content">
+        <div class = "info" id = "TN-1-info"></div>
+        <div class = "info" id = "TN-2-info"></div>
+        <div class = "info" id = "TN-3-info"></div>
+        <div class = "info" id = "TN-4-info"></div>
       </div>
     </div>
-
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
@@ -57,7 +50,7 @@
     crossorigin="anonymous"></script>
 
     <!-- Filters -->
-    <script src="js/index.js"></script>
+    <script src="js/projects.js"></script>
 
   </body>
 

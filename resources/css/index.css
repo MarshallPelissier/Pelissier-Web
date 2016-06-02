@@ -50,41 +50,16 @@ body{
   width:7vw;
   height:7vw;
   display: block;
-  background-color: lightblue;
-  outline:solid;
-  outline-color: transparent;
-  -webkit-transition: outline-color .25s;
-  -moz-transition: outline-color .25s;
-  -o-transition: outline-color .25s;
-  transition: outline-color .25s;
+  background-color: hsl(200, 40%, 50%);
+  box-shadow: 0 0 0px 0px hsl(200, 40%, 50%);
+  -webkit-transition: box-shadow .25s;
+  -moz-transition: box-shadow .25s;
+  -o-transition: box-shadow .25s;
+  transition: box-shadow .25s;
 }
 .link-box:hover{
   cursor:pointer;
-  outline-color: lightblue;
-}
-.info{
-  width: 33vw;
-  height: 0px;
-  background-color:green;
-  transition: height .25s;
-  margin-left:1vw;
-}
-.info-open{
-  height:19vw;
-}
-.content{
-  margin-left: auto;
-  margin-right: auto;
-  width:35vw;
-  height:0px;
-  background-color: grey;
-  transition: height .25s;
-}
-.content-open{
-  height:20vw;
-  padding:1vw;
-  padding-left:0px;
-  padding-top:0px;
+  box-shadow: 0 0 0px 3px hsl(200, 40%, 50%);
 }
 #TN-2-info{
   background-color:pink;
