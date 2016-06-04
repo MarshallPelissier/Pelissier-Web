@@ -61,9 +61,3 @@ body{
   cursor:pointer;
   box-shadow: 0 0 0px 3px hsl(200, 40%, 50%);
 }
-#TN-2-info{
-  background-color:pink;
-}
-#TN-3-info{
-  background-color:blue;
-}

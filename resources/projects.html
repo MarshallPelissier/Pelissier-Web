@@ -16,8 +16,11 @@
     <!-- Project Custom CSS -->
     <link rel="stylesheet" href="css/projects.css">
 
-    <!-- Mono Roboto font -->
+    <!-- Roboto Mono font -->
     <link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
+
+    <!-- Fira Mono font -->
+    <link href='https://fonts.googleapis.com/css?family=Fira+Mono' rel='stylesheet' type='text/css'>
 
     <!-- Favicon
     <link rel="shortcut icon" href="filename='img/favicon.ico" type="image/x-icon">
@@ -26,21 +29,50 @@
 
   <body background = "img/background.png">
 
-    <a href = "index.html"><div class = "icon-box"></div></a>
-    <div class = "panel panel-default content-container">
-      <div class = "panel-header icon-container">
-        <div class = "icon-box" id = "TN-1">
-          <p class = "icon-label"> VL </p>
-        </div>
-        <div class = "icon-box" id = "TN-2"></div>
-        <div class = "icon-box" id = "TN-3"></div>
-        <div class = "icon-box" id = "TN-4"></div>
+    <a href = "index.html"><div style = "height:100px;width:100px;background-color:blue;"></div></a>
+
+    <div class="content-container">
+      <div class = "title">
+        <span><b>Projects</b></span>
       </div>
-      <div class = "panel-content content">
-        <div class = "info" id = "TN-1-info"></div>
-        <div class = "info" id = "TN-2-info"></div>
-        <div class = "info" id = "TN-3-info"></div>
-        <div class = "info" id = "TN-4-info"></div>
+
+      <div class = "panel panel-default" style = "margin-top:10vh">
+        <div class = "panel-header icon-container">
+
+          <div class = "icon-box" id = "TN-1" onselectstart="return false">
+            <span class = "short-text" id = "TN-1-short">VL</span>
+            <span class = "full-text" id = "TN-1-full">
+              Video Locale
+            </span>
+          </div>
+
+          <div class = "icon-box" id = "TN-2" onselectstart="return false">
+            <span class = "short-text" id = "TN-2-short">Web</span>
+            <span class = "full-text" id = "TN-2-full">
+              Personal Site
+            </span>
+          </div>
+
+          <div class = "icon-box" id = "TN-3" onselectstart="return false">
+            <span class = "short-text" id = "TN-3-short">NBA</span>
+            <span class = "full-text" id = "TN-3-full">
+              NBA Live Edit
+            </span>
+          </div>
+
+          <div class = "icon-box" id = "TN-4" onselectstart="return false">
+            <span class = "short-text" id = "TN-4-short">SQ</span>
+            <span class = "full-text" id = "TN-4-full">
+              Stock Quotes
+            </span>
+          </div>
+        </div>
+        <div class = "panel-content content">
+          <div class = "info" id = "TN-1-info"></div>
+          <div class = "info" id = "TN-2-info"></div>
+          <div class = "info" id = "TN-3-info"></div>
+          <div class = "info" id = "TN-4-info"></div>
+        </div>
       </div>
     </div>
     <!-- JQuery -->
