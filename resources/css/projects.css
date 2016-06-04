@@ -29,6 +29,8 @@ body{
   height:7vw;
   background-color: hsl(200, 40%, 50%);
   box-shadow: 0 0 0px 0px hsl(200, 40%, 50%);
+  overflow: hidden;
+  font-size:5vw;
   -webkit-transition: box-shadow .27s, background-color .27s linear;
   -moz-transition: box-shadow .27s, background-color .27s linear;
   -o-transition: box-shadow .27s, background-color .27s linear;
@@ -37,9 +39,15 @@ body{
 .icon-box:hover{
   cursor:pointer;
   box-shadow: 0 0 0px 3px hsl(200, 40%, 50%);
+  font-size:6vw;
 }
 .icon-box-open{
   background-color: hsl(100, 40%, 50%);
+}
+.icon-label{
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
 }
 .info{
   margin-left: 1vw;
