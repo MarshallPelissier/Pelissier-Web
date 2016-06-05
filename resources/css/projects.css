@@ -9,22 +9,26 @@ div{
 body{
   background-color: hsl(0,0%,100%);
 }
+.panel.panel-default:hover{
+  box-shadow: 0 0 0px 3px hsl(200, 40%, 50%);
+}
 .content-container{
   margin:auto;
-  margin-top: 3vh;
+  margin-top: 0vh;
   width:45vw;
   padding: 0px;
 }
 .title{
-  margin-top: 7vh;
-  margin-bottom: 7vh;
   width:45vw;
   padding: 0px;
   color: hsl(0,100%,15%);
-  font-size: 6vw;
+  font-size: 5.5vw;
   text-align: center;
   vertical-align: middle;
   display: table-cell;
+}
+.title:hover{
+  cursor:default;
 }
 .icon-container{
   margin:auto;
@@ -93,7 +97,7 @@ body{
   transition: height .25s, border 0s linear .04s, background-color .25s linear;
 }
 .info-open{
-  height:29vh;
+  height: 33vh;
   border-width: 3px;
 }
 .content{
@@ -107,7 +111,7 @@ body{
   transition: height .25s;
 }
 .content-open{
-  height:30vh;
+  height:35vh;
   padding-bottom:1vw;
   padding-left:0px;
   padding-top:0px;
@@ -116,15 +120,28 @@ body{
 /*menu buttons*/
 .menu-container{
   width:100vw;
-  height:9vw;
+  height:11vh;
+  min-height: 5vh;
 }
 .menu-button{
-  margin: 2vw;
-  height: 5vw;
-  width:5vw;
+  margin: 2vh;
+  height: 7vh;
+  width:7vh;
+  min-height: 4vw;
+  min-width: 4vw;
+  background-color: hsl(0,0%,100%);
   border:solid;
   border-color: hsl(200, 40%, 50%);
-  border-radius:2.5vw;
+  border-radius:3.5vh;
+  -webkit-transition: border .2s, box-shadow .2s;
+  -moz-transition: border .2s, box-shadow .2s;
+  -o-transition: border .2s, box-shadow .2s;
+  transition: border .2s, box-shadow .2s;
+}
+.menu-button:hover{
+  cursor:pointer;
+  border-color: hsl(0,0%,90%);
+  box-shadow: 0 0 0px 3px hsl(200, 40%, 50%);
 }
 .menu-home{
   float:left;
@@ -133,6 +150,34 @@ body{
   float:right;
 }
 .menu-view{
+  float: right;
 }
 
+/*link-button*/
+.link-button{
+  margin: auto;
+  height:7vh;
+  background-color: hsl(0,0%,100%);
+  border:solid;
+  border-color: hsl(200, 40%, 50%);
+  border-radius:5px;
+  font-size: 5vh;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+  -webkit-transition: border .2s, box-shadow .2s;
+  -moz-transition: border .2s, box-shadow .2s;
+  -o-transition: border .2s, box-shadow .2s;
+  transition: border .2s, box-shadow .2s;
+
+}
+.link-button:hover{
+  cursor:pointer;
+  border-color: hsl(0,0%,90%);
+  box-shadow: 0 0 0px 3px hsl(200, 40%, 50%);
+  font-weight: bold;
+}
+#link-projects{
+  width: 20vw;
+}
 /*media queries*/
