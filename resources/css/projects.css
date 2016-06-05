@@ -35,6 +35,7 @@ body{
   padding-top: 1.25vw;
   padding-bottom: 1.25vw;
 }
+/*used to change between projects, shrinks when opened, opens specific info, bolded when hovered*/
 .icon-box{
   width:7vw;
   height:7vw;
@@ -75,6 +76,7 @@ body{
 .full-text{
   display: none;
 }
+/*information for selected icon-box*/
 .info{
   margin-left: 1vw;
   /*width: 32.9vw;*/
@@ -111,3 +113,26 @@ body{
   padding-top:0px;
   padding-right: 1.1vw;
 }
+/*menu buttons*/
+.menu-container{
+  width:100vw;
+  height:9vw;
+}
+.menu-button{
+  margin: 2vw;
+  height: 5vw;
+  width:5vw;
+  border:solid;
+  border-color: hsl(200, 40%, 50%);
+  border-radius:2.5vw;
+}
+.menu-home{
+  float:left;
+}
+.menu-dark{
+  float:right;
+}
+.menu-view{
+}
+
+/*media queries*/
