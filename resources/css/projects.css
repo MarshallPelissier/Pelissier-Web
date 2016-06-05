@@ -9,8 +9,11 @@ div{
 body{
   background-color: hsl(0,0%,100%);
 }
+.panel.panel-default{
+  box-shadow: 0 0 0px 1px hsl(200, 30%, 90%);
+}
 .panel.panel-default:hover{
-  box-shadow: 0 0 0px 3px hsl(200, 40%, 50%);
+  box-shadow: 0 0 0px 2px hsl(200, 40%, 85%);
 }
 .content-container{
   margin:auto;
