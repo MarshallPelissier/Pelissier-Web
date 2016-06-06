@@ -16,8 +16,8 @@ body{
 }
 .picture{
   margin: auto;
-  margin-top: 20vh;
-  box-shadow: 0 0 0px 3px hsl(0, 40%, 50%);
+  margin-top: 15vh;
+  box-shadow: 0 0 0px 3px hsl(200, 40%, 50%);
   border:solid;
   border-color: hsl(0, 0%, 100%);
   border-radius: 10px;
@@ -26,7 +26,7 @@ body{
   height: 128px;
 }
 .name-label{
-  margin-top: 10vh;
+  margin-top: 5vh;
   font-size: 20pt;
   color: hsl(0,100%,15%);
   text-align: center;
@@ -37,7 +37,7 @@ body{
   margin:auto;
   margin-top: 5vh;
   border: solid;
-  border-color: hsl(0, 40%, 50%);
+  border-color: hsl(200, 40%, 50%);
   width:40vw;
   display:flex;
   flex-direction: row;
@@ -50,14 +50,18 @@ body{
   width:7vw;
   height:7vw;
   display: block;
-  background-color: hsl(200, 40%, 50%);
+  background-color: hsl(100, 40%, 50%);
+  border: solid;
+  border-color: hsl(200, 40%, 50%);
+  border-radius: 5px;
   box-shadow: 0 0 0px 0px hsl(200, 40%, 50%);
-  -webkit-transition: box-shadow .25s;
-  -moz-transition: box-shadow .25s;
-  -o-transition: box-shadow .25s;
-  transition: box-shadow .25s;
+  -webkit-transition: border .25s, box-shadow .25s;
+  -moz-transition: border .25s, box-shadow .25s;
+  -o-transition: border .25s, box-shadow .25s;
+  transition: border .25s, box-shadow .25s;
 }
 .link-box:hover{
   cursor:pointer;
+  border-color: hsl(0, 0%, 100%);
   box-shadow: 0 0 0px 3px hsl(200, 40%, 50%);
 }

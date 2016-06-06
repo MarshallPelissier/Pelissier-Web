@@ -67,7 +67,7 @@ body{
 }
 .icon-box:hover{
   cursor:pointer;
-  box-shadow: 0 0 0px 3px hsl(200, 40%, 50%);
+  box-shadow: 0 0 0px 3px hsl(100, 40%, 50%);
   font-weight: bold;
 }
 .icon-box-open{
@@ -80,6 +80,11 @@ body{
   border-width: 5px;
   border-color: hsl(100, 40%, 50%);
 }
+.icon-box-open:hover{
+    cursor:pointer;
+    box-shadow: 0 0 0px 3px hsl(200, 40%, 50%);
+    font-weight: bold;
+}
 .full-text{
   display: none;
 }
@@ -89,19 +94,32 @@ body{
   /*width: 32.9vw;*/
   width: 42.8vw;
   height: 0px;
-  transition: height .25s;
+  padding: 0vw;
   background-color: hsl(0,0%,90%);
   border: solid;
   border-width: 0px;
   border-color: hsl(200, 40%, 50%);
-  -webkit-transition: height .25s, border 0s linear .04s, background-color .25s linear;
-  -moz-transition: height .25s, border 0s linear .04s, background-color .25s linear;
-  -o-transition: height .25s, border 0s linear .04s, background-color .25s linear;
-  transition: height .25s, border 0s linear .04s, background-color .25s linear;
+  -webkit-transition: height .25s, border 0s linear .04s, background-color .25s linear, padding 0s linear .25s;
+  -moz-transition: height .25s, border 0s linear .04s, background-color .25s linear, padding 0s linear .25s;
+  -o-transition: height .25s, border 0s linear .04s, background-color .25s linear, padding 0s linear .25s;
+  transition: height .25s, border 0s linear .04s, background-color .25s linear, padding 0s linear .25s;
 }
 .info-open{
+  padding:1vh;
+  padding-bottom: 0vh;
   height: 33vh;
   border-width: 3px;
+}
+.info-inner{
+  height: 100%;
+  width: 100%;
+  padding-left: .25vw;
+  padding-right: .25vw;
+  overflow: hidden;
+}
+.info-inner-content{
+  height: 23vh;
+  width: 100%;
 }
 .content{
   margin-left: auto;
@@ -156,10 +174,19 @@ body{
   float: right;
 }
 
-/*link-button*/
+/*links css*/
+.link{
+  margin: auto;
+  margin-bottom: 1vh;
+  display:block;
+  width:20vw;
+}
 .link-button{
   margin: auto;
   height:7vh;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-top: 3vh;
   background-color: hsl(0,0%,100%);
   border:solid;
   border-color: hsl(200, 40%, 50%);
@@ -180,7 +207,13 @@ body{
   box-shadow: 0 0 0px 3px hsl(200, 40%, 50%);
   font-weight: bold;
 }
+#TN-1-link{
+  padding-top: 0.5vh;
+  font-size: 2.5vh;
+  line-height: 0vh;
+}
 #link-projects{
   width: 20vw;
+  padding: 0px;
 }
 /*media queries*/

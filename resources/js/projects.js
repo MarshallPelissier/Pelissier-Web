@@ -5,22 +5,22 @@ $(document).ready(function() {
     // opening is instant
     // closing is delayed
     function this_delay(){
-      $Elem.css("-webkit-transition","height .25s, border 0s linear .21s, background-color .25s linear");
-      $Elem.css("-moz-transition","height .25s, border 0s linear .21s, background-color .25s linear");
-      $Elem.css("-o-transition","height .25s, border 0s linear .21s, background-color .25s linear");
-      $Elem.css("transition","height .25s, border 0s linear .21s, background-color .25s linear");
+      $Elem.css("-webkit-transition","height .25s, border 0s linear .21s, background-color .25s linear, padding .15s");
+      $Elem.css("-moz-transition","height .25s, border 0s linear .21s, background-color .25s linear, padding .15s");
+      $Elem.css("-o-transition","height .25s, border 0s linear .21s, background-color .25s linear, padding .15s");
+      $Elem.css("transition","height .25s, border 0s linear .21s, background-color .25s linear, padding .15s");
     }
     function this_instant(){
-      $Elem.css("-webkit-transition","height .25s, border 0s linear .04s, background-color .25s linear");
-      $Elem.css("-moz-transition","height .25s, border 0s linear .04s, background-color .25s linear");
-      $Elem.css("-o-transition","height .25s, border 0s linear .04s, background-color .25s linear");
-      $Elem.css("transition","height .25s, border 0s linear .04s, background-color .25s linear");
+      $Elem.css("-webkit-transition","height .25s, border 0s linear .04s, background-color .25s linear, padding .15s");
+      $Elem.css("-moz-transition","height .25s, border 0s linear .04s, background-color .25s linear, padding .15s");
+      $Elem.css("-o-transition","height .25s, border 0s linear .04s, background-color .25s linear, padding .15s");
+      $Elem.css("transition","height .25s, border 0s linear .04s, background-color .25s linear, padding .15s");
     }
     function others_delay(){
-      $('.info').not($Elem).css("-webkit-transition","height .25s, border 0s linear .04s, background-color .25s linear");
-      $('.info').not($Elem).css("-moz-transition","height .25s, border 0s linear .04s, background-color .25s linear");
-      $('.info').not($Elem).css("-o-transition","height .25s, border 0s linear .04s, background-color .25s linear");
-      $('.info').not($Elem).css("transition","height .25s, border 0s linear .04s, background-color .25s linear");
+      $('.info').not($Elem).css("-webkit-transition","height .25s, border 0s linear .04s, background-color .25s linear, padding .15s");
+      $('.info').not($Elem).css("-moz-transition","height .25s, border 0s linear .04s, background-color .25s linear, padding .15s");
+      $('.info').not($Elem).css("-o-transition","height .25s, border 0s linear .04s, background-color .25s linear, padding .15s");
+      $('.info').not($Elem).css("transition","height .25s, border 0s linear .04s, background-color .25s linear, padding .15ss");
     }
 
     //variables. id (TN-#), info being opened, shortend icon text, full icon text.
@@ -28,6 +28,7 @@ $(document).ready(function() {
     var $Elem = $('#' + id + "-info");
     var $short = $('#' + id + "-short");
     var $full = $('#' + id + "-full");
+
     //closing unused elements
     $('.icon-box').not($(this)).removeClass('icon-box-open');
     $('.info').not($Elem).removeClass('info-open');
