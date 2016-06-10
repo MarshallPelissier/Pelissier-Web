@@ -1,0 +1,85 @@
+/*Dark theme for all css classes*/
+/*
+
+hsl(200,10%,10%)
+hsl(200,10%,20%)
+hsl(200,10%,30%)
+hsl(200,10%,40%)
+
+*/
+body.dark{
+  background-image: url('../img/background-dark.png');
+  background-color: hsl(200,10%,30%);
+}
+.panel.panel-default.dark{
+  border:solid;
+  border-width: 0px;
+  background-color: hsl(200,10%,20%);
+}
+.panel.panel-default.dark{
+  box-shadow: 0 0 0px 1px hsl(200, 10%, 50%);
+}
+.panel.panel-default:hover.dark{
+  box-shadow: 0 0 0px 2px hsl(200, 10%, 50%);
+}
+.title.dark{
+  color: hsl(200, 10%, 90%);
+}
+
+.icon-container.dark{
+}
+/*used to change between projects, shrinks when opened, opens specific info, bolded when hovered*/
+.icon-box.dark{
+}
+.icon-box:hover.dark{
+}
+.icon-box-open.dark{
+}
+.icon-box-open:hover.dark{
+}
+.full-text.dark{
+}
+/*information for selected icon-box*/
+.info.dark{
+  background-color: hsl(200,10%,40%);
+}
+.info-open.dark{
+}
+.info-inner.dark{
+}
+.info-inner-content.dark{
+}
+.content.dark{
+}
+.content-open.dark{
+}
+/*menu buttons*/
+.menu-container.dark{
+}
+.menu-button.dark{
+  background-color: hsl(200,10%,40%);
+}
+.menu-button:hover.dark{
+}
+.menu-home.dark{
+}
+.menu-dark.dark{
+  color: hsl(200,10%,90%);
+}
+.menu-view.dark{
+  color: hsl(200,10%,90%);
+}
+
+/*links css*/
+.link.dark{
+}
+.link-button.dark{
+  background-color: hsl(200,10%,40%);
+}
+.link-button:hover.dark{
+}
+#TN-1-link.dark{
+}
+#link-projects.dark{
+}
+/*media queries*/

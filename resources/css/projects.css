@@ -7,7 +7,17 @@ div{
  font-family: 'Roboto Mono';
 }
 body{
+  background-image: url('../img/background.png');
   background-color: hsl(0,0%,100%);
+}
+/*makes text unselectable*/
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 .panel.panel-default{
   box-shadow: 0 0 0px 1px hsl(200, 30%, 90%);
@@ -175,10 +185,26 @@ body{
 .menu-dark{
   float:right;
 }
+#dark-text-1{
+}
+#dark-text-2{
+  display: none;
+}
+
+#dark-text-1.dark{
+  display:none;
+}
+#dark-text-2.dark{
+  display: block;
+}
 .menu-view{
   float: right;
 }
-
+#view-text-1{
+}
+#view-text-2{
+  display: none;
+}
 /*links css*/
 .link{
   margin: auto;

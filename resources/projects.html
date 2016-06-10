@@ -16,6 +16,9 @@
     <!-- Project Custom CSS -->
     <link rel="stylesheet" href="css/projects.css">
 
+    <!-- Dark mode CSS -->
+    <link rel="stylesheet" href="css/dark.css">
+
     <!-- Roboto Mono font -->
     <link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
 
@@ -27,55 +30,55 @@
     <link rel="icon" href="img/favicon.ico" type="image/x-icon"> -->
   </head>
 
-  <body background = "img/background.png">
+  <body>
     <div class = "menu-container">
       <a href = "index.html">
-        <div class = "menu-button menu-home">
+        <div class = "menu-button menu-home .unselectable">
           Home
         </div>
       </a>
-      <a href = "index.html">
-        <div class = "menu-button menu-view">
-          Mobile
-        </div>
-      </a>
-      <a href = "index.html">
-        <div class = "menu-button menu-dark">
-          Dark
-        </div>
-      </a>
+
+      <div class = "menu-button menu-view">
+        <span class = ".unselectable" id = "view-text-1">Mobile</span>
+        <span class = ".unselectable" id = "view-text-2">Desktop</span>
+      </div>
+
+      <div class = "menu-button menu-dark">
+        <span class = ".unselectable" id = "dark-text-1">Dark</span>
+        <span class = ".unselectable" id = "dark-text-2">Bright</span>
+      </div>
     </div>
 
     <div class="content-container">
-      <div class = "title" onselectstart="return false">
-        <span><b>Projects</b></span>
+      <div class = "title">
+        <span class = ".unselectable"><b>Projects</b></span>
       </div>
 
       <div class = "panel panel-default" style = "margin-top:5vh">
         <div class = "panel-header icon-container">
 
-          <div class = "icon-box" id = "TN-1" onselectstart="return false">
+          <div class = "icon-box .unselectable" id = "TN-1" onselectstart="return false">
             <span class = "short-text" id = "TN-1-short">VL</span>
             <span class = "full-text" id = "TN-1-full">
               Video Locale
             </span>
           </div>
 
-          <div class = "icon-box" id = "TN-2" onselectstart="return false">
+          <div class = "icon-box .unselectable" id = "TN-2" onselectstart="return false">
             <span class = "short-text" id = "TN-2-short">Web</span>
             <span class = "full-text" id = "TN-2-full">
               Personal Site
             </span>
           </div>
 
-          <div class = "icon-box" id = "TN-3" onselectstart="return false">
+          <div class = "icon-box .unselectable" id = "TN-3" onselectstart="return false">
             <span class = "short-text" id = "TN-3-short">NBA</span>
             <span class = "full-text" id = "TN-3-full">
               NBA Live Edit
             </span>
           </div>
 
-          <div class = "icon-box" id = "TN-4" onselectstart="return false">
+          <div class = "icon-box .unselectable" id = "TN-4" onselectstart="return false">
             <span class = "short-text" id = "TN-4-short">SQ</span>
             <span class = "full-text" id = "TN-4-full">
               Stock Quotes
@@ -88,7 +91,7 @@
             <div class = "info-inner">
               <div class = "info-inner-content">
               </div>
-              <a href = "https://github.com/Team-95/videolocale" class = "link" style = "width:auto;text-decoration:none"><div class = "link-button" id = "TN-1-link">Video Locale Github </div></a>
+              <a href = "https://github.com/Team-95/videolocale" class = "link" style = "width:auto;text-decoration:none"><div class = "link-button .unselectable" id = "TN-1-link">Video Locale Github </div></a>
             </div>
           </div>
 
@@ -96,7 +99,7 @@
             <div class = "info-inner">
               <div class = "info-inner-content">
               </div>
-              <a href = "https://github.com/MarshallPelissier/Pelissier-Web" class = "link" style = "width:auto;text-decoration:none"><div class = "link-button" id = "TN-1-link">Personal Website Github </div></a>
+              <a href = "https://github.com/MarshallPelissier/Pelissier-Web" class = "link" style = "width:auto;text-decoration:none"><div class = "link-button .unselectable" id = "TN-1-link">Personal Website Github </div></a>
             </div>
           </div>
 
@@ -104,7 +107,7 @@
             <div class = "info-inner">
               <div class = "info-inner-content">
               </div>
-              <a href = "https://github.com/Team-95" class = "link" style = "width:auto;text-decoration:none"><div class = "link-button" id = "TN-1-link">NBA 95 Edit Github </div></a>
+              <a href = "https://github.com/Team-95" class = "link" style = "width:auto;text-decoration:none"><div class = "link-button .unselectable" id = "TN-1-link">NBA 95 Edit Github </div></a>
             </div>
           </div>
 
@@ -112,13 +115,13 @@
             <div class = "info-inner">
               <div class = "info-inner-content">
               </div>
-              <a href = "http://pelissierm.cs.spu.edu" class = "link" style = "width:auto;text-decoration:none"><div class = "link-button" id = "TN-1-link">Stock Quotes Website </div></a>
+              <a href = "http://pelissierm.cs.spu.edu" class = "link" style = "width:auto;text-decoration:none"><div class = "link-button .unselectable" id = "TN-1-link">Stock Quotes Website </div></a>
             </div>
           </div>
         </div>
       </div>
 
-      <a href = "https://github.com/MarshallPelissier" class = "link" style = "text-decoration:none"><div class = "link-button" id = "link-projects">GitHub </div></a>
+      <a href = "https://github.com/MarshallPelissier" class = "link" style = "text-decoration:none"><div class = "link-button .unselectable" id = "link-projects">GitHub </div></a>
     </div>
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

@@ -74,5 +74,8 @@ $(document).ready(function() {
     this_delay();
 
   });
-
+  $('.menu-dark').click(function(){
+    $('*').toggleClass('dark');
+    
+  });
 });
