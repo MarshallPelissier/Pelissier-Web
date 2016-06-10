@@ -32,6 +32,7 @@ body{
   padding: 0px;
 }
 .title{
+  clear:right;
   width:45vw;
   padding: 0px;
   color: hsl(0,100%,15%);
@@ -190,7 +191,6 @@ body{
 #dark-text-2{
   display: none;
 }
-
 #dark-text-1.dark{
   display:none;
 }
@@ -204,6 +204,12 @@ body{
 }
 #view-text-2{
   display: none;
+}
+#view-text-1.mobile{
+  display: none;
+}
+#view-text-2.mobile{
+  display: block;
 }
 /*links css*/
 .link{

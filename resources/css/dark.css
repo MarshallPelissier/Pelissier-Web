@@ -57,7 +57,7 @@ body.dark{
 .menu-container.dark{
 }
 .menu-button.dark{
-  background-color: hsl(200,10%,40%);
+  background-color: hsl(200,10%,20%);
 }
 .menu-button:hover.dark{
 }
@@ -74,7 +74,7 @@ body.dark{
 .link.dark{
 }
 .link-button.dark{
-  background-color: hsl(200,10%,40%);
+  background-color: hsl(200,10%,20%);
 }
 .link-button:hover.dark{
 }

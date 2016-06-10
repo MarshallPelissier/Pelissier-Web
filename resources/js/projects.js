@@ -28,27 +28,45 @@ $(document).ready(function() {
     var $Elem = $('#' + id + "-info");
     var $short = $('#' + id + "-short");
     var $full = $('#' + id + "-full");
-
+    var icon_height;
+    var icon_height_small;
+    var icon_border_radius;
+    var icon_line_height;
+    var icon_line_height_selected;
+    var icon_line_height_small;
+    if ($('*').hasClass('mobile')){
+      icon_height = '14vw';
+      icon_height_small = '10vw';
+      icon_line_height = '14vw';
+      icon_line_height_selected = '9vw';
+      icon_line_height_small = '11vw';
+    }
+    else{
+      icon_height = '7vw';
+      icon_height_small = '5vw';
+      icon_line_height = '7vw';
+      icon_line_height_selected = '4.5vw';
+      icon_line_height_small = '5.5vw';
+    }
     //closing unused elements
     $('.icon-box').not($(this)).removeClass('icon-box-open');
     $('.info').not($Elem).removeClass('info-open');
     $('.short-text').not($short).show();
     $('.full-text').not($full).hide();
-
     if($('.info').hasClass('info-open')){
     	$('.content').removeClass('content-open');
-      $('.icon-box').css("height","7vw");
+      $('.icon-box').css("height",icon_height);
       $('.icon-box').css("border-radius","5px");
-      $('.icon-box').css("line-height","7vw");
+      $('.icon-box').css("line-height",icon_line_height);
 
       //transition timings. delay this element
       this_delay();
     }
     else{
-      $('.icon-box').css("height","5vw");
+      $('.icon-box').css("height",icon_height_small);
       $('.icon-box').css("border-radius","0px");
-      $('.icon-box').not($(this)).css("line-height","5.5vw");
-      $(this).css("line-height","4.5vw");
+      $('.icon-box').not($(this)).css("line-height",icon_line_height_small);
+      $(this).css("line-height",icon_line_height_selected);
 
       //transition timings. instant transition for this element
       this_instant();
@@ -76,6 +94,33 @@ $(document).ready(function() {
   });
   $('.menu-dark').click(function(){
     $('*').toggleClass('dark');
-    
+  });
+  $('.menu-view').click(function(){
+    $('*').toggleClass('mobile');
+
+    var icon_height;
+    var icon_height_small;
+    var icon_border_radius;
+    var icon_line_height;
+    var icon_line_height_selected;
+    var icon_line_height_small;
+    if ($('*').hasClass('mobile')){
+      icon_height = '14vw';
+      icon_height_small = '10vw';
+      icon_line_height = '14vw';
+      icon_line_height_selected = '9vw';
+      icon_line_height_small = '11vw';
+    }
+    else{
+      icon_height = '7vw';
+      icon_height_small = '5vw';
+      icon_line_height = '7vw';
+      icon_line_height_selected = '4.5vw';
+      icon_line_height_small = '5.5vw';
+    }
+    $('.icon-box').css("height",icon_height);
+    $('.icon-box').css("border-radius","5px");
+    $('.icon-box').css("line-height",icon_line_height);
+
   });
 });

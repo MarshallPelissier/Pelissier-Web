@@ -1,0 +1,77 @@
+/*Dark theme for all css classes*/
+/*
+
+hsl(200,10%,10%)
+hsl(200,10%,20%)
+hsl(200,10%,30%)
+hsl(200,10%,40%)
+
+*/
+.content-container.mobile{
+  width:90vw;
+}
+.title.mobile{
+  margin: auto;
+  width: 90vw;
+}
+
+.icon-container.mobile{
+}
+/*used to change between projects, shrinks when opened, opens specific info, bolded when hovered*/
+.icon-box.mobile{
+  height: 14vw;
+  width: 14vw;
+  line-height: 14vw;
+  font-size:7vw;
+}
+.icon-box:hover.mobile{
+}
+.icon-box-open.mobile{
+  width: 28vw;
+  font-size:3vw;
+}
+.icon-box-open:hover.mobile{
+}
+.full-text.mobile{
+}
+/*information for selected icon-box*/
+.info.mobile{
+  width: 88vw;
+}
+.info-open.mobile{
+}
+.info-inner.mobile{
+}
+.info-inner-content.mobile{
+}
+.content.mobile{
+    width: 90vw;
+}
+.content-open.mobile{
+}
+/*menu buttons*/
+.menu-container.mobile{
+}
+.menu-button.mobile{
+}
+.menu-button:hover.mobile{
+}
+.menu-home.mobile{
+}
+.menu-dark.mobile{
+}
+.menu-view.mobile{
+}
+
+/*links css*/
+.link.mobile{
+}
+.link-button.mobile{
+}
+.link-button:hover.mobile{
+}
+#TN-1-link.mobile{
+}
+#link-projects.mobile{
+}
+/*media queries*/
