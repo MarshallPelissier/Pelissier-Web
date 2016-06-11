@@ -22,7 +22,20 @@ $(document).ready(function() {
       $('.info').not($Elem).css("-o-transition","height .25s, border 0s linear .04s, background-color .25s linear, padding .15s");
       $('.info').not($Elem).css("transition","height .25s, border 0s linear .04s, background-color .25s linear, padding .15ss");
     }
-
+    function icon_css(){
+      icon_height = '12vmin';
+      icon_height_small = '7vmin';
+      icon_line_height = '12vmin';
+      icon_line_height_selected = '6vmin';
+      icon_line_height_small = '7.5vmin';
+    }
+    function icon_css_mobile(){
+      icon_height = '14vmin';
+      icon_height_small = '10vmin';
+      icon_line_height = '14vmin';
+      icon_line_height_selected = '9vmin';
+      icon_line_height_small = '11vmin';
+    }
     //variables. id (TN-#), info being opened, shortend icon text, full icon text.
     var id = $(this).attr('id');
     var $Elem = $('#' + id + "-info");
@@ -35,18 +48,10 @@ $(document).ready(function() {
     var icon_line_height_selected;
     var icon_line_height_small;
     if ($('*').hasClass('mobile')){
-      icon_height = '14vw';
-      icon_height_small = '10vw';
-      icon_line_height = '14vw';
-      icon_line_height_selected = '9vw';
-      icon_line_height_small = '11vw';
+      icon_css_mobile();
     }
     else{
-      icon_height = '7vw';
-      icon_height_small = '5vw';
-      icon_line_height = '7vw';
-      icon_line_height_selected = '4.5vw';
-      icon_line_height_small = '5.5vw';
+      icon_css();
     }
     //closing unused elements
     $('.icon-box').not($(this)).removeClass('icon-box-open');
@@ -105,18 +110,10 @@ $(document).ready(function() {
     var icon_line_height_selected;
     var icon_line_height_small;
     if ($('*').hasClass('mobile')){
-      icon_height = '14vw';
-      icon_height_small = '10vw';
-      icon_line_height = '14vw';
-      icon_line_height_selected = '9vw';
-      icon_line_height_small = '11vw';
+      icon_css_mobile();
     }
     else{
-      icon_height = '7vw';
-      icon_height_small = '5vw';
-      icon_line_height = '7vw';
-      icon_line_height_selected = '4.5vw';
-      icon_line_height_small = '5.5vw';
+      icon_css();
     }
     $('.icon-box').css("height",icon_height);
     $('.icon-box').css("border-radius","5px");

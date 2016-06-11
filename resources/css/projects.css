@@ -27,16 +27,17 @@ body{
 }
 .content-container{
   margin:auto;
-  margin-top: 0vh;
-  width:45vw;
+  margin-top: 3vh;
+  width:55vw;
   padding: 0px;
 }
 .title{
   clear:right;
-  width:45vw;
+  width:55vw;
   padding: 0px;
   color: hsl(0,100%,15%);
   font-size: 5.5vw;
+  line-height: 10vmin;
   text-align: center;
   vertical-align: middle;
   display: table-cell;
@@ -55,8 +56,8 @@ body{
 }
 /*used to change between projects, shrinks when opened, opens specific info, bolded when hovered*/
 .icon-box{
-  width:7vw;
-  height:7vw;
+  width:12vmin;
+  height:12vmin;
   overflow: hidden;
   background-color: hsl(200, 40%, 50%);
   box-shadow: 0 0 0px 0px hsl(200, 40%, 50%);
@@ -65,12 +66,12 @@ body{
   border-color: hsl(200, 40%, 50%);
   border-radius: 5px;
   font-family: 'Fira Mono';
-  font-size:3.5vw;
+  font-size:5vmin;
   font-weight: normal;
   text-align: center;
   vertical-align: middle;
   display: table-cell;
-  line-height: 7vw;
+  line-height: 12vmin;
   -webkit-transition: height .25s, width .25s, box-shadow .25s, background-color .25s linear, border .25s linear, font-weight .25s, line-height .25s;
   -moz-transition: height .25s, width .25s, box-shadow .25s, background-color .25s linear, border .25s linear, font-weight .25s, line-height .25s;
   -o-transition: height .25s, width .25s, box-shadow .25s, background-color .25s linear, border .25s linear, font-weight .25s, line-height .25s;
@@ -82,10 +83,10 @@ body{
   font-weight: bold;
 }
 .icon-box-open{
-  width:14vw;
+  width:20vmin;
   background-color: hsl(100, 40%, 50%);
   font-family: 'Roboto Mono';
-  font-size: 1.5vw;
+  font-size: 2.25vmin;
   line-height: 0px;
   border:solid;
   border-width: 5px;
@@ -103,7 +104,7 @@ body{
 .info{
   margin-left: 1vw;
   /*width: 32.9vw;*/
-  width: 42.8vw;
+  width: 52.8vw;
   height: 0px;
   padding: 0vw;
   background-color: hsl(0,0%,90%);
@@ -129,13 +130,13 @@ body{
   overflow: hidden;
 }
 .info-inner-content{
-  height: 23vh;
+  height: 25vh;
   width: 100%;
 }
 .content{
   margin-left: auto;
   margin-right: auto;
-  width:45vw;
+  width:55vw;
   height:0px;
   -webkit-transition: height .25s;
   -moz-transition: height .25s;
@@ -161,6 +162,8 @@ body{
   width:8vh;
   min-height: 32px;
   min-width: 32px;
+  max-height: 20vw;
+  max-width: 20vw;
   padding-top: 2.5vh;
   font-size:1.75vh;
   font-weight: normal;
@@ -216,19 +219,19 @@ body{
   margin: auto;
   margin-bottom: 1vh;
   display:block;
-  width:20vw;
+  width:20vmin;
 }
 .link-button{
   margin: auto;
-  height:7vh;
-  padding-left: 1vw;
-  padding-right: 1vw;
-  padding-top: 3vh;
+  height:7vmin;
+  padding-left: 1vmin;
+  padding-right: 1vmin;
+  padding-top: 3vmin;
   background-color: hsl(0,0%,100%);
   border:solid;
   border-color: hsl(200, 40%, 50%);
   border-radius:5px;
-  font-size: 5vh;
+  font-size: 5vmin;
   text-align: center;
   vertical-align: middle;
   display: table-cell;
@@ -245,12 +248,13 @@ body{
   font-weight: bold;
 }
 #TN-1-link{
-  padding-top: 0.5vh;
-  font-size: 2.5vh;
+  height:5vh;
+  padding-top: 0.5vmin;
+  font-size: 2.5vmin;
   line-height: 0vh;
 }
 #link-projects{
-  width: 20vw;
+  width: 20vmin;
   padding: 0px;
 }
 /*media queries*/

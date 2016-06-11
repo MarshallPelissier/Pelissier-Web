@@ -19,16 +19,16 @@ hsl(200,10%,40%)
 }
 /*used to change between projects, shrinks when opened, opens specific info, bolded when hovered*/
 .icon-box.mobile{
-  height: 14vw;
-  width: 14vw;
-  line-height: 14vw;
-  font-size:7vw;
+  height: 14vmin;
+  width: 14vmin;
+  line-height: 14vmin;
+  font-size:7vmin;
 }
 .icon-box:hover.mobile{
 }
 .icon-box-open.mobile{
-  width: 28vw;
-  font-size:3vw;
+  width: 28vmin;
+  font-size:3vmin;
 }
 .icon-box-open:hover.mobile{
 }
