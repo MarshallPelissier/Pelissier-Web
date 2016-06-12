@@ -13,6 +13,12 @@
     <!-- Index Custom CSS -->
     <link rel="stylesheet" href="css/index.css">
 
+    <!-- Dark mode CSS -->
+    <link rel="stylesheet" href="css/dark.css">
+
+    <!-- mobile mode CSS -->
+    <link rel="stylesheet" href="css/mobile.css">
+
     <!-- Mono Roboto font -->
     <link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
 
@@ -22,6 +28,19 @@
   </head>
 
   <body background = "img/background.png">
+    <div class = "menu-container">
+      <div class = "menu-button menu-view">
+        <span class = ".unselectable" id = "view-text-1">Mobile</span>
+        <span class = ".unselectable" id = "view-text-2">Desktop</span>
+      </div>
+
+      <div class = "menu-button menu-dark">
+        <span class = ".unselectable" id = "dark-text-1">Dark</span>
+        <span class = ".unselectable" id = "dark-text-2">Bright</span>
+      </div>
+    </div>
+    <div style = "height: 3vh;"></div>
+
     <div class "container-fluid">
       <div class="col-xs-1 col-sm-2 col-md-3 col-lg-3"></div>
 
@@ -50,8 +69,8 @@
     integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
     crossorigin="anonymous"></script>
 
-    <!-- Filters -->
-    <script src="js/index.js"></script>
+    <!-- tabs ,dark and mobile -->
+    <script src="js/projects.js"></script>
 
   </body>
 

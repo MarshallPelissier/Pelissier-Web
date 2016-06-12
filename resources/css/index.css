@@ -9,6 +9,51 @@ div{
 body{
   background-color: hsl(0,0%,100%);
 }
+/*menu buttons*/
+.menu-container{
+  width:100vw;
+  height:11vh;
+  min-height: 5vh;
+}
+.menu-button{
+  margin: 2vh;
+  height: 8vh;
+  width:8vh;
+  min-height: 32px;
+  min-width: 32px;
+  max-height: 20vw;
+  max-width: 20vw;
+  padding-top: 2.5vh;
+  font-size:1.75vh;
+  font-weight: normal;
+  text-align: center;
+  background-color: hsl(0,0%,100%);
+  border:solid;
+  border-color: hsl(200, 40%, 50%);
+  border-radius:4vh;
+  -webkit-transition: border .2s, box-shadow .2s;
+  -moz-transition: border .2s, box-shadow .2s;
+  -o-transition: border .2s, box-shadow .2s;
+  transition: border .2s, box-shadow .2s;
+}
+.menu-button:hover{
+  cursor:pointer;
+  border-color: hsl(0,0%,90%);
+  box-shadow: 0 0 0px 3px hsl(200, 40%, 50%);
+  font-weight: bold;
+}
+.menu-home{float:left;}
+.menu-dark{float:right;}
+#dark-text-1{}
+#dark-text-2{display: none;}
+#dark-text-1.dark{display:none;}
+#dark-text-2.dark{display: block;}
+.menu-view{float: right;}
+#view-text-1{}
+#view-text-2{display: none;}
+#view-text-1.mobile{display: none;}
+#view-text-2.mobile{display: block;}
+
 .column{
   display: flex;
   flex-direction: column;
@@ -16,7 +61,6 @@ body{
 }
 .picture{
   margin: auto;
-  margin-top: 15vh;
   box-shadow: 0 0 0px 3px hsl(200, 40%, 50%);
   border:solid;
   border-color: hsl(0, 0%, 100%);

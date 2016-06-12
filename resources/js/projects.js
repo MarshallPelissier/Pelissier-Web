@@ -1,4 +1,25 @@
 $(document).ready(function() {
+
+  var icon_height;
+  var icon_height_small;
+  var icon_border_radius;
+  var icon_line_height;
+  var icon_line_height_selected;
+  var icon_line_height_small;
+  function icon_css(){
+    icon_height = '12vmin';
+    icon_height_small = '7vmin';
+    icon_line_height = '12vmin';
+    icon_line_height_selected = '6vmin';
+    icon_line_height_small = '7.5vmin';
+  };
+  function icon_css_mobile(){
+    icon_height = '14vmin';
+    icon_height_small = '10vmin';
+    icon_line_height = '14vmin';
+    icon_line_height_selected = '9vmin';
+    icon_line_height_small = '11vmin';
+  };
   $('.icon-box').click(function(){
 
     //transition timing functions
@@ -22,31 +43,11 @@ $(document).ready(function() {
       $('.info').not($Elem).css("-o-transition","height .25s, border 0s linear .04s, background-color .25s linear, padding .15s");
       $('.info').not($Elem).css("transition","height .25s, border 0s linear .04s, background-color .25s linear, padding .15ss");
     }
-    function icon_css(){
-      icon_height = '12vmin';
-      icon_height_small = '7vmin';
-      icon_line_height = '12vmin';
-      icon_line_height_selected = '6vmin';
-      icon_line_height_small = '7.5vmin';
-    }
-    function icon_css_mobile(){
-      icon_height = '14vmin';
-      icon_height_small = '10vmin';
-      icon_line_height = '14vmin';
-      icon_line_height_selected = '9vmin';
-      icon_line_height_small = '11vmin';
-    }
     //variables. id (TN-#), info being opened, shortend icon text, full icon text.
     var id = $(this).attr('id');
     var $Elem = $('#' + id + "-info");
     var $short = $('#' + id + "-short");
     var $full = $('#' + id + "-full");
-    var icon_height;
-    var icon_height_small;
-    var icon_border_radius;
-    var icon_line_height;
-    var icon_line_height_selected;
-    var icon_line_height_small;
     if ($('*').hasClass('mobile')){
       icon_css_mobile();
     }
@@ -103,21 +104,24 @@ $(document).ready(function() {
   $('.menu-view').click(function(){
     $('*').toggleClass('mobile');
 
-    var icon_height;
-    var icon_height_small;
-    var icon_border_radius;
-    var icon_line_height;
-    var icon_line_height_selected;
-    var icon_line_height_small;
     if ($('*').hasClass('mobile')){
       icon_css_mobile();
     }
     else{
       icon_css();
     }
-    $('.icon-box').css("height",icon_height);
-    $('.icon-box').css("border-radius","5px");
-    $('.icon-box').css("line-height",icon_line_height);
+    console.log(icon_height);
+    if($('.info').hasClass('info-open')){
+      $('.icon-box').css("height",icon_height_small);
+      $('.icon-box').css("border-radius","0px");
+      $('.icon-box').css("line-height",icon_line_height_small);
+      $('.icon-box-open').css("line-height",icon_line_height_selected);
+    }
+    else{
+      $('.icon-box').css("height",icon_height);
+      $('.icon-box').css("border-radius","5px");
+      $('.icon-box').css("line-height",icon_line_height);
+    }
 
   });
 });

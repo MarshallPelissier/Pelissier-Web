@@ -25,7 +25,16 @@ body.dark{
 .title.dark{
   color: hsl(200, 10%, 90%);
 }
-
+.picture.dark{
+  border-color: hsl(0, 0%, 30%);
+  background-color: hsl(0,0%,100%);
+}
+.name-label.dark{
+  color: hsl(200,10%,90%);
+}
+.link-box:hover.dark{
+  border-color: hsl(0, 0%, 20%);
+}
 .icon-container.dark{
 }
 /*used to change between projects, shrinks when opened, opens specific info, bolded when hovered*/
