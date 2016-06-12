@@ -12,25 +12,23 @@ body{
 /*menu buttons*/
 .menu-container{
   width:100vw;
-  height:11vh;
+  height:14vh;
   min-height: 5vh;
 }
 .menu-button{
   margin: 2vh;
-  height: 8vh;
-  width:8vh;
+  height: 9.5vmin;
+  width:9.5vmin;
   min-height: 32px;
   min-width: 32px;
-  max-height: 20vw;
-  max-width: 20vw;
-  padding-top: 2.5vh;
-  font-size:1.75vh;
+  padding-top: 3.25vmin;
+  font-size:1.75vmin;
   font-weight: normal;
   text-align: center;
   background-color: hsl(0,0%,100%);
   border:solid;
   border-color: hsl(200, 40%, 50%);
-  border-radius:4vh;
+  border-radius:4.75vmin;
   -webkit-transition: border .2s, box-shadow .2s;
   -moz-transition: border .2s, box-shadow .2s;
   -o-transition: border .2s, box-shadow .2s;
@@ -99,6 +97,13 @@ body{
   border-color: hsl(200, 40%, 50%);
   border-radius: 5px;
   box-shadow: 0 0 0px 0px hsl(200, 40%, 50%);
+  color: hsl(200,10%,30%);
+  font-family: 'Fira Mono';
+  font-size:2.5vmin;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
   -webkit-transition: border .25s, box-shadow .25s;
   -moz-transition: border .25s, box-shadow .25s;
   -o-transition: border .25s, box-shadow .25s;
@@ -108,4 +113,5 @@ body{
   cursor:pointer;
   border-color: hsl(0, 0%, 100%);
   box-shadow: 0 0 0px 3px hsl(200, 40%, 50%);
+  font-weight: bold;
 }

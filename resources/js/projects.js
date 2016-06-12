@@ -20,6 +20,10 @@ $(document).ready(function() {
     icon_line_height_selected = '9vmin';
     icon_line_height_small = '11vmin';
   };
+  function icon_css_games_mobile(){
+    icon_height = '12vmin';
+    icon_line_height = '12vmin';
+  }
   $('.icon-box').click(function(){
 
     //transition timing functions
@@ -50,6 +54,9 @@ $(document).ready(function() {
     var $full = $('#' + id + "-full");
     if ($('*').hasClass('mobile')){
       icon_css_mobile();
+      if($(document).find('title').text() === "Games"){
+        icon_css_games_mobile();
+      }
     }
     else{
       icon_css();
@@ -106,11 +113,13 @@ $(document).ready(function() {
 
     if ($('*').hasClass('mobile')){
       icon_css_mobile();
+      if($(document).find('title').text() === "Games"){
+        icon_css_games_mobile();
+      }
     }
     else{
       icon_css();
     }
-    console.log(icon_height);
     if($('.info').hasClass('info-open')){
       $('.icon-box').css("height",icon_height_small);
       $('.icon-box').css("border-radius","0px");

@@ -41,6 +41,7 @@ hsl(200,10%,40%)
 .info-open.mobile{
 }
 .info-inner.mobile{
+  font-size: 2vmin;
 }
 .info-inner-content.mobile{
 }

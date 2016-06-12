@@ -36,53 +36,57 @@
   <body>
     <div class = "menu-container">
       <a href = "index.html">
-        <div class = "menu-button menu-home .unselectable">
+        <div class = "menu-button menu-home unselectable">
           Home
         </div>
       </a>
-
+      <a href = "games.html">
+        <div class = "menu-button menu-home unselectable">
+          Games
+        </div>
+      </a>
       <div class = "menu-button menu-view">
-        <span class = ".unselectable" id = "view-text-1">Mobile</span>
-        <span class = ".unselectable" id = "view-text-2">Desktop</span>
+        <span class = "unselectable" id = "view-text-1">Mobile</span>
+        <span class = "unselectable" id = "view-text-2">Desktop</span>
       </div>
 
       <div class = "menu-button menu-dark">
-        <span class = ".unselectable" id = "dark-text-1">Dark</span>
-        <span class = ".unselectable" id = "dark-text-2">Bright</span>
+        <span class = "unselectable" id = "dark-text-1">Dark</span>
+        <span class = "unselectable" id = "dark-text-2">Bright</span>
       </div>
     </div>
     <div style = "height: 3vh;"></div>
 
     <div class="content-container">
       <div class = "title">
-        <span class = ".unselectable"><b>Projects</b></span>
+        <span class = "unselectable"><b>Projects</b></span>
       </div>
 
       <div class = "panel panel-default" style = "margin-top:5vh">
         <div class = "panel-header icon-container">
 
-          <div class = "icon-box .unselectable" id = "TN-1" onselectstart="return false">
+          <div class = "icon-box unselectable" id = "TN-1" onselectstart="return false">
             <span class = "short-text" id = "TN-1-short">VL</span>
             <span class = "full-text" id = "TN-1-full">
               Video Locale
             </span>
           </div>
 
-          <div class = "icon-box .unselectable" id = "TN-2" onselectstart="return false">
+          <div class = "icon-box unselectable" id = "TN-2" onselectstart="return false">
             <span class = "short-text" id = "TN-2-short">Web</span>
             <span class = "full-text" id = "TN-2-full">
               Personal Site
             </span>
           </div>
 
-          <div class = "icon-box .unselectable" id = "TN-3" onselectstart="return false">
+          <div class = "icon-box unselectable" id = "TN-3" onselectstart="return false">
             <span class = "short-text" id = "TN-3-short">NBA</span>
             <span class = "full-text" id = "TN-3-full">
               NBA Live Edit
             </span>
           </div>
 
-          <div class = "icon-box .unselectable" id = "TN-4" onselectstart="return false">
+          <div class = "icon-box unselectable" id = "TN-4" onselectstart="return false">
             <span class = "short-text" id = "TN-4-short">SQ</span>
             <span class = "full-text" id = "TN-4-full">
               Stock Quotes
@@ -94,38 +98,56 @@
           <div class = "info" id = "TN-1-info">
             <div class = "info-inner">
               <div class = "info-inner-content">
+                <span>
+                  VideoLocale allows users to search for videos by selecting regions on a map. Youtube videos are displayed based on the selected regions and any chosen filters.<br>
+                  VideoLocale was created for a senior software engineering course at Seattle Pacific University.
+                </span>
               </div>
-              <a href = "https://github.com/Team-95/videolocale" class = "link" style = "width:auto;text-decoration:none"><div class = "link-button .unselectable" id = "TN-1-link">Video Locale Github </div></a>
+              <a href = "https://videolocale.com/" class = "link" style = "width:auto;text-decoration:none;float:left;"><div class = "link-button unselectable info-link" id = "">Video Locale</div></a>
             </div>
+            <img class = "info-image" src="img/videolocale.png" alt="VideoLocale">
           </div>
 
           <div class = "info" id = "TN-2-info">
             <div class = "info-inner">
               <div class = "info-inner-content">
+                <span>
+                  I created this website to display the projects I have worked on and completed. I enjoy web development and creating video games.
+                  I tried to learn as many new things as possible while working on this site and I hope you enjoy it :)
+                </span>
               </div>
-              <a href = "https://github.com/MarshallPelissier/Pelissier-Web" class = "link" style = "width:auto;text-decoration:none"><div class = "link-button .unselectable" id = "TN-1-link">Personal Website Github </div></a>
+              <a href = "https://github.com/MarshallPelissier/Pelissier-Web" class = "link" style = "width:auto;text-decoration:none;float:left;"><div class = "link-button unselectable info-link" id = "">Personal Website Github </div></a>
             </div>
           </div>
 
           <div class = "info" id = "TN-3-info">
             <div class = "info-inner">
               <div class = "info-inner-content">
+                <span>
+                  NBA Live 95 edit is a project that adds the current (2014-15) NBA rosters to NBA live 95. The created tools allow anyone to edit the game and add their own players.<br>
+                  NBA Live 95 edit consists of tools to pull NBA stats and edit player appearances, spreadsheets with formulas to compute player skill values, and a program to modify the ROM itself.
+                </span>
               </div>
-              <a href = "https://github.com/Team-95" class = "link" style = "width:auto;text-decoration:none"><div class = "link-button .unselectable" id = "TN-1-link">NBA 95 Edit Github </div></a>
+              <a href = "https://github.com/Team-95" class = "link" style = "width:auto;text-decoration:none;float:left;"><div class = "link-button unselectable info-link" >NBA 95 Edit Github </div></a>
             </div>
+            <img class = "info-image" src="img/nbalive95.gif" alt="NBA Live 95">
           </div>
 
           <div class = "info" id = "TN-4-info">
             <div class = "info-inner">
               <div class = "info-inner-content">
+                <span>
+                  The "Stock Quotes" website was made for a web development class at Seattle Pacific University. Users can search for current stock information or look at the past history of a stock.
+                </span>
               </div>
-              <a href = "http://pelissierm.cs.spu.edu" class = "link" style = "width:auto;text-decoration:none"><div class = "link-button .unselectable" id = "TN-1-link">Stock Quotes Website </div></a>
+              <a href = "http://pelissierm.cs.spu.edu" class = "link" style = "width:auto;text-decoration:none;float:left;"><div class = "link-button unselectable info-link" >Stock Quotes Website </div></a>
             </div>
+            <img class = "info-image" src="img/stockquotes.png" alt="NBA Live 95">
           </div>
         </div>
       </div>
 
-      <a href = "https://github.com/MarshallPelissier" class = "link" style = "text-decoration:none"><div class = "link-button .unselectable" id = "link-projects">GitHub </div></a>
+      <a href = "https://github.com/MarshallPelissier" class = "link" style = "text-decoration:none;width:20vmin;"><div class = "link-button unselectable" id = "link-projects">GitHub </div></a>
     </div>
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

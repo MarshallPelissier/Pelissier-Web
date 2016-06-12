@@ -102,8 +102,10 @@ body{
 }
 /*information for selected icon-box*/
 .info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   margin-left: 1vw;
-  /*width: 32.9vw;*/
   width: 52.8vw;
   height: 0px;
   padding: 0vw;
@@ -118,16 +120,16 @@ body{
 }
 .info-open{
   padding:1vh;
-  padding-bottom: 0vh;
   height: 33vh;
   border-width: 3px;
 }
 .info-inner{
   height: 100%;
-  width: 100%;
+  width: auto;
   padding-left: .25vw;
-  padding-right: .25vw;
+  padding-right: .75vw;
   overflow: hidden;
+  font-size: 1.0vw;
 }
 .info-inner-content{
   height: 25vh;
@@ -150,13 +152,19 @@ body{
   padding-top:0px;
   padding-right: 1.1vw;
 }
-
+.info-image{
+  float:right;
+  height: 100%;
+  width: auto;
+  max-width: 50%;
+}
 /*links css*/
 .link{
   margin: auto;
   margin-bottom: 1vh;
   display:block;
-  width:20vmin;
+  width:auto;
+  max-width:65vmin;
 }
 .link-button{
   margin: auto;
@@ -184,7 +192,7 @@ body{
   box-shadow: 0 0 0px 3px hsl(200, 40%, 50%);
   font-weight: bold;
 }
-#TN-1-link{
+.info-link{
   height:5vh;
   padding-top: 0.5vmin;
   font-size: 2.5vmin;
@@ -192,6 +200,10 @@ body{
 }
 #link-projects{
   width: 20vmin;
+  padding: 0px;
+}
+#link-games{
+  width:100vmin;
   padding: 0px;
 }
 /*media queries*/
