@@ -16,7 +16,7 @@ body{
   min-height: 5vh;
 }
 .menu-button{
-  margin: 2vh;
+  margin: 2vmin;
   height: 9.5vmin;
   width:9.5vmin;
   min-height: 32px;
@@ -40,6 +40,9 @@ body{
   box-shadow: 0 0 0px 3px hsl(200, 40%, 50%);
   font-weight: bold;
 }
+.menu-botton-clicked{
+  text-decoration: underline;
+}
 .menu-home{float:left;}
 .menu-dark{float:right;}
 #dark-text-1{}
@@ -51,11 +54,18 @@ body{
 #view-text-2{display: none;}
 #view-text-1.mobile{display: none;}
 #view-text-2.mobile{display: block;}
-
+.buffer{
+  height: 0vh;
+  float:none;
+}
 .column{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin:auto;
+  margin-top: 3vh;
+  width:55vw;
+  padding: 0px;
 }
 .picture{
   margin: auto;
@@ -76,21 +86,19 @@ body{
   display: table-cell;
 }
 .link-container{
-  margin:auto;
-  margin-top: 5vh;
+  margin-top: 3vh;
   border: solid;
   border-color: hsl(200, 40%, 50%);
-  width:40vw;
   display:flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 1vw;
-  padding-top: 2vw;
-  padding-bottom: 2vw;
+  padding: 0vmin;
+  padding-top: 4vmin;
+  padding-bottom: 4vmin;
 }
 .link-box{
-  width:7vw;
-  height:7vw;
+  width:14vmin;
+  height:14vmin;
   display: block;
   background-color: hsl(100, 40%, 50%);
   border: solid;
@@ -114,4 +122,10 @@ body{
   border-color: hsl(0, 0%, 100%);
   box-shadow: 0 0 0px 3px hsl(200, 40%, 50%);
   font-weight: bold;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio : 1.5) , (max-width: 1281px){
+  .buffer{
+    float:right;
+  }
 }

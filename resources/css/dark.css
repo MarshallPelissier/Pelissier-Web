@@ -57,6 +57,7 @@ body.dark{
 .info-inner.dark{
 }
 .info-inner-content.dark{
+  color: hsl(200,10%,90%);
 }
 .content.dark{
 }

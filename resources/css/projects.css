@@ -113,10 +113,10 @@ body{
   border: solid;
   border-width: 0px;
   border-color: hsl(200, 40%, 50%);
-  -webkit-transition: height .25s, border 0s linear .04s, background-color .25s linear, padding 0s linear .25s;
-  -moz-transition: height .25s, border 0s linear .04s, background-color .25s linear, padding 0s linear .25s;
-  -o-transition: height .25s, border 0s linear .04s, background-color .25s linear, padding 0s linear .25s;
-  transition: height .25s, border 0s linear .04s, background-color .25s linear, padding 0s linear .25s;
+  -webkit-transition: height .25s, border 0s linear .04s, padding 0s linear .25s;
+  -moz-transition: height .25s, border 0s linear .04s, padding 0s linear .25s;
+  -o-transition: height .25s, border 0s linear .04s, padding 0s linear .25s;
+  transition: height .25s, border 0s linear .04s, padding 0s linear .25s;
 }
 .info-open{
   padding:1vh;

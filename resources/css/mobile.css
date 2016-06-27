@@ -13,6 +13,7 @@ hsl(200,10%,40%)
 .title.mobile{
   margin: auto;
   width: 90vw;
+  font-size: 10vmin;
 }
 
 .icon-container.mobile{
@@ -52,8 +53,14 @@ hsl(200,10%,40%)
 }
 /*menu buttons*/
 .menu-container.mobile{
+  height: 20vmin;
 }
 .menu-button.mobile{
+  height: 16vmin;
+  width: 16vmin;
+  padding-top: 5.25vmin;
+  font-size:3vmin;
+  border-radius:8vmin;
 }
 .menu-button:hover.mobile{
 }
@@ -75,4 +82,14 @@ hsl(200,10%,40%)
 }
 #link-projects.mobile{
 }
-/*media queries*/
+
+/*home page*/
+.column.mobile{
+  width: 90vw;
+}
+.link-container.mobile{
+}
+.link-box.mobile{
+}
+.link-box:hover.mobile{
+}
