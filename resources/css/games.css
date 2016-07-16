@@ -31,18 +31,18 @@
   width: 25vmin;
   font-size: 2vmin;
 }
-#info-baf{
+.info-double{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-#info-inner-baf{
+.info-inner-double{
   height:auto;
 }
-#info-inner-baf.mobile{
+.info-inner-double.mobile{
   font-size: 1.6vw;
 }
-#info-baf-links{
+.info-double-links{
   margin-bottom: .5vh;
 }
 #cf {

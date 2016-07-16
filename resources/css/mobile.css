@@ -7,6 +7,9 @@ hsl(200,10%,30%)
 hsl(200,10%,40%)
 
 */
+.panel.panel-default.mobile{
+  margin-bottom: 1.9vmin;
+}
 .content-container.mobile{
   width:90vw;
 }
@@ -87,9 +90,7 @@ hsl(200,10%,40%)
 .column.mobile{
   width: 90vw;
 }
-.link-container.mobile{
-}
-.link-box.mobile{
-}
-.link-box:hover.mobile{
+.picture.mobile{
+  height: 96px;
+  width: 96px;
 }
