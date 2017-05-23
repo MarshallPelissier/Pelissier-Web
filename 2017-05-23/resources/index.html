@@ -1,0 +1,694 @@
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+
+    <title>Marshall Pelissier</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Index Custom CSS -->
+    <link rel="stylesheet" href="css/index.css">
+
+  </head>
+
+  <body style="background-color: hsl(185,40%,80%)">
+    <div class="container-fluid page-container " style="">
+
+      <!-- Main Page -->
+
+      <div class="container-fluid row page" id="Main" style="">
+        <div class="row" style="height:100%; max-height:25vh;"></div>
+
+        <div class="row" style="flex-grow: 2; max-height:65vh;" >
+          <div class="col-xs-1 col-md-2"></div>
+
+          <div class="col-xs-10 col-md-8">
+            <div class "" style=";text-align:center;">
+              <span class="" style="font-size:4.5vh; font-weight:bold;">
+                <b>Welcome to my website!</b>
+              </span>
+              <span class="" style="font-size:3vmin;">
+                <br><br> I'm Marshall Pelissier,
+                <br>a recent Computer Science graduate from Seattle Pacific University.
+                <br>Check out the things I've worked on.
+              </span>
+            </div>
+          </div>
+
+          <div class="col-xs-1 col-md-2"></div>
+        </div>
+
+        <div class="row" style="max-height:30vh;">
+          <div class="col-xs-1 col-md-3"></div>
+
+          <div class="col-xs-10 col-md-6" style="display:flex; justify-content:space-around">
+            <div class="btn btn-default button-project" style="height:10vh; width:15vmax; font-size: 2vmax; display:flex; justify-content:center; align-items:center;">
+              Projects
+            </div>
+            <div class="btn btn-default button-game" style="height:10vh; width:15vmax; font-size: 2vmax; display:flex; justify-content:center; align-items:center;">
+              Games
+            </div>
+          </div>
+
+          <div class="col-xs-1 col-md-3"></div>
+        </div>
+
+        <div class="row" style="height:100%; max-height:20vh;"></div>
+      </div>
+
+
+      <!-- Project Page -->
+      <div class="container-fluid row page hide" id="Project" style="height:100%;">
+        <div class="row hide" style="height:100%; max-height:15vh;"></div>
+
+        <div class="row center" style="flex-grow: 2; max-height:65vh; padding-top:2.25vh; padding-bottom:2.25vh;" >
+          <div class="col-xs-1 col-md-2"></div>
+
+          <div class="col-xs-10 col-md-8 ">
+            <div class "" style=";text-align:center;">
+              <span class="" style="font-size:10vh; font-weight:bold;">
+                <b>Projects</b>
+              </span>
+            </div>
+          </div>
+
+          <div class="col-xs-1 col-md-2"></div>
+        </div>
+
+        <div class="row" style="">
+          <div class="col-xs-2 col-md-3"></div>
+
+          <div class="col-xs-8 col-md-6" style="display:flex; flex-wrap: wrap; justify-content:space-around;">
+            <button type="button" class="btn btn-default card center" data-toggle="modal" data-target="#VLModal" style="flex-direction:column">
+              <div>
+                <img src="img/VL_logo.png" style="width:7vh;height:7vh;">
+              </div>
+              <div style="font-size:2.5vmin">
+                Video Locale
+              </div>
+            </button>
+
+            <!-- VL Modal -->
+            <div class="modal fade" id="VLModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog " role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title title" id="myModalLabel">Video Locale</h4>
+                  </div>
+                  <div class="modal-body center" style="padding:0;flex-direction:column;">
+
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"style="max-height:35vh;max-width:65vh;">
+                      <!-- Indicators -->
+                      <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                      </ol>
+
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                          <img src="img/VL_main.png" alt="...">
+                        </div>
+                        <div class="item" >
+                          <img src="img/VL_playlist.png" alt="...">
+                        </div>
+                      </div>
+
+                      <!-- Controls -->
+                      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+
+                    <div style="height:1px;width:100%; background-color:hsl(0,0%,90%);margin-bottom:1vh;"></div>
+                    <div class="modal-text">
+                      VideoLocale allows users to search for videos by selecting regions on a map.
+                      Youtube videos are displayed based on the selected regions and any chosen filters.
+                      VideoLocale was created for a senior software engineering course at Seattle Pacific University.
+                    </div>
+                  </div>
+                  <div class="modal-footer center" style="width:100%; justify-content:space-between">
+                    <a href="https://videolocale.com/" class="modal-a">
+                      <button type="button" class="btn btn-default center modal-button">Video Locale</button>
+                    </a>
+                    <a href="https://github.com/Team-95/videolocale" class="modal-a">
+                      <button type="button" class="btn btn-primary center modal-button" >Github</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <button type="button" class="btn btn-default card center" data-toggle="modal" data-target="#PWModal">
+              Personal Website
+            </button>
+
+            <!-- PW Modal -->
+            <div class="modal fade" id="PWModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog " role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title title" id="myModalLabel">Personal Website</h4>
+                  </div>
+                  <div class="modal-body" style="padding:0;">
+                    <div class="modal-text">
+                      I created this website to display the projects I have worked on and completed.
+                      I enjoy web development and creating video games.
+                      I tried to learn as many new things as possible while working on this site and I hope you enjoy it (:
+                    </div>
+                  </div>
+                  <div class="modal-footer center" style="width:100%; justify-content:space-between; ">
+                    <a href="https://github.com/MarshallPelissier/Pelissier-Web" class="modal-a">
+                      <button type="button" class="btn btn-primary center modal-button">Github</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="btn btn-default card center" data-toggle="modal" data-target="#NBAModal">
+              NBA Live 95 Edit
+            </button>
+
+            <!-- NBA Modal -->
+            <div class="modal fade" id="NBAModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog " role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title title" id="myModalLabel">NBA Live 95 Edit</h4>
+                  </div>
+                  <div class="modal-body" style="padding:0;">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"style="max-height:35vh;max-width:65vh;margin:0 auto;">
+
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                          <img src="img/nbalive95.gif" alt="..."style="max-height:35vh;max-width:65vh;margin:0 auto;">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div style="height:1px;width:100%; background-color:hsl(0,0%,90%);margin-bottom:1vh;"></div>
+                    <div class="modal-text">
+                      NBA Live 95 edit is a project that adds the current (2014-15) NBA rosters to NBA live 95.
+                      The created tools allow anyone to edit the game and add their own players.
+                      NBA Live 95 edit consists of tools to pull NBA stats and edit player appearances,
+                      spreadsheets with formulas to compute player skill values, and a program to modify the ROM itself.
+                    </div>
+                  </div>
+                  <div class="modal-footer center" style="width:100%; justify-content:space-between; ">
+                    <a href="https://github.com/Team-95" class="modal-a">
+                      <button type="button" class="btn btn-primary center modal-button">Github</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="btn btn-default card center" data-toggle="modal" data-target="#SQModal">
+              Stock Quotes
+            </button>
+
+            <!-- Stock Quotes Modal -->
+            <div class="modal fade" id="SQModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog " role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title title" id="myModalLabel">Stock Quotes Website</h4>
+                  </div>
+                  <div class="modal-body" style="padding:0;">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"style="max-height:35vh;max-width:65vh;margin:0 auto;">
+
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                          <img src="img/stockquotes.png" alt="..."style="max-height:35vh;max-width:65vh;margin:0 auto;">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="modal-text">
+                      The "Stock Quotes" website was made for a web development class at Seattle Pacific University.
+                      Users can search for current stock information or look at the past history of a stock.
+                    </div>
+                  </div>
+                  <div class="modal-footer center" style="width:100%; justify-content:space-between; ">
+                    <a href="http://pelissierm.cs.spu.edu/" class="modal-a">
+                      <button type="button" class="btn btn-default center modal-button">Stock Quote</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-2 col-md-3"></div>
+        </div>
+
+        <div class="row center" style="height:100%; max-height:15vh;">
+          <div class="col-xs-5 col-md-3" style="display:flex; justify-content:space-around">
+            <div class="btn btn-default button-main" style="height:5vh; width:7vmax; font-size: 1vmax; display:flex; justify-content:center; align-items:center;">
+              Main
+            </div>
+            <div class="btn btn-default button-game" style="height:5vh; width:7vmax; font-size: 1vmax; display:flex; justify-content:center; align-items:center;">
+              Games
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Game Page -->
+      <div class="container-fluid row page hide" id="Game" style="height:100%;">
+        <div class="row hide" style="height:100%; max-height:15vh;"></div>
+
+        <div class="row center" style="flex-grow: 2; max-height:65vh; padding-top:2.25vh; padding-bottom:2.25vh;" >
+          <div class="col-xs-1 col-md-2"></div>
+
+          <div class="col-xs-10 col-md-8 ">
+            <div class "" style=";text-align:center;">
+              <span class="" style="font-size:10vh; font-weight:bold;">
+                <b>Games</b>
+              </span>
+            </div>
+          </div>
+
+          <div class="col-xs-1 col-md-2"></div>
+        </div>
+
+        <div class="row" style="">
+          <div class="col-xs-2 col-md-3"></div>
+
+          <div class="col-xs-8 col-md-6" style="display:flex; flex-wrap: wrap; justify-content:space-around;">
+            <button type="button" class="btn btn-default card center" data-toggle="modal" data-target="#BFModal">
+              Back and Forth
+            </button>
+
+            <!-- BF Modal -->
+            <div class="modal fade" id="BFModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog " role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title title" id="myModalLabel" style="font-size:5vmin; font-weight:bpld;">Video Locale</h4>
+                  </div>
+                  <div class="modal-body center" style="padding:0;flex-direction:column;">
+
+                    <div id="BF-carousel" class="carousel slide" data-ride="carousel"style="max-height:35vh;max-width:65vh;">
+                      <!-- Indicators -->
+                      <ol class="carousel-indicators">
+                        <li data-target="#BF-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#BF-carousel" data-slide-to="1"></li>
+                      </ol>
+
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                          <img src="img/VL_1.png" alt="...">
+                        </div>
+                        <div class="item" >
+                          <img src="img/VL_1.png" alt="...">
+                        </div>
+                      </div>
+
+                      <!-- Controls -->
+                      <a class="left carousel-control" href="#BF-carousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right carousel-control" href="#BF-carousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                    <div style="height:1px;width:100%; background-color:hsl(0,0%,90%);margin-bottom:1vh;"></div>
+                    <div class="modal-text">
+                      Back and Forth was created for the "Ludum Dare 30" game jam. We finished pretty well so we continued
+                      to work on it and eventually released it for android on the google play store. Back and Forth is a
+                      puzzle game where you have to maneuver 2 blocks into the correct position. Whenever you move one
+                      block the other moves in the oposite direction.
+                    </div>
+                  </div>
+                  <div class="modal-footer center" style="width:100%; justify-content:space-between">
+                    <a href="http://ludumdare.com/compo/ludum-dare-30/?action=preview&uid=34809" class="modal-a" style="width:17vh;">
+                      <button type="button" class="btn btn-default center modal-button">Ludum Dare</button>
+                    </a>
+                    <a href="https://play.google.com/store/apps/developer?id=T-17+Heavy+Industries" class="modal-a" style="width:17vh;">
+                      <button type="button" class="btn btn-default center modal-button">Google Play</button>
+                    </a>
+                    <a href="https://github.com/T17HeavyIndustries/back-and-forth" class="modal-a" style="width:17vh;">
+                      <button type="button" class="btn btn-primary center modal-button">Github</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <button type="button" class="btn btn-default card center" data-toggle="modal" data-target="#PTModal">
+              Puzzel Tower
+            </button>
+
+            <!-- PT Modal -->
+            <div class="modal fade" id="PTModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog " role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title title" id="myModalLabel">Puzzel Tower</h4>
+                  </div>
+                  <div class="modal-body" style="padding:0;">
+                    <div id="PT-carousel" class="carousel slide" data-ride="carousel"style="max-height:35vh;max-width:65vh;">
+                      <!-- Indicators -->
+                      <ol class="carousel-indicators">
+                        <li data-target="#PT-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#PT-carousel" data-slide-to="1"></li>
+                        <li data-target="#PT-carousel" data-slide-to="2"></li>
+                      </ol>
+
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                          <img src="img/PT_1.png" alt="...">
+                        </div>
+                        <div class="item" >
+                          <img src="img/PT_2.png" alt="...">
+                        </div>
+                        <div class="item" >
+                          <img src="img/PT_3.png" alt="...">
+                        </div>
+                      </div>
+
+                      <!-- Controls -->
+                      <a class="left carousel-control" href="#PT-carousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right carousel-control" href="#PT-carousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                    <div style="height:1px;width:100%; background-color:hsl(0,0%,90%);margin-bottom:1vh;"></div>
+                    <div class="modal-text">
+                      Puzzle Tower is a 3D puzzle platformer created for "Ludum Dare 34".
+                      The focus of the game is to climb a tower while pushing blocks and jumping over obstacles.
+                    </div>
+                  </div>
+                  <div class="modal-footer center" style="width:100%; justify-content:space-between; ">
+                    <a href="http://ludumdare.com/compo/ludum-dare-34/?action=preview&uid=34809" style="width:20vh; ">
+                      <button type="button" class="btn btn-default center modal-button">Ludum Dare</button>
+                    </a>
+                    <a href="https://github.com/T17HeavyIndustries/LudumDare34" style="width:20vh;">
+                      <button type="button" class="btn btn-primary center modal-button">Github</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="btn btn-default card center" data-toggle="modal" data-target="#CubeModal">
+              Cubestrophobia
+            </button>
+
+            <!-- Cube Modal -->
+            <div class="modal fade" id="CubeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog " role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title title" id="myModalLabel">Cubestrophobia</h4>
+                  </div>
+                  <div class="modal-body" style="padding:0;">
+                    <div id="Cube-carousel" class="carousel slide" data-ride="carousel"style="max-height:35vh;max-width:65vh;">
+                      <!-- Indicators -->
+                      <ol class="carousel-indicators">
+                        <li data-target="#Cube-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#Cube-carousel" data-slide-to="1"></li>
+                        <li data-target="#Cube-carousel" data-slide-to="2"></li>
+                      </ol>
+
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                          <img src="img/Cube_1.png" alt="...">
+                        </div>
+                        <div class="item" >
+                          <img src="img/Cube_2.png" alt="...">
+                        </div>
+                        <div class="item" >
+                          <img src="img/Cube_3.png" alt="...">
+                        </div>
+                      </div>
+
+                      <!-- Controls -->
+                      <a class="left carousel-control" href="#Cube-carousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right carousel-control" href="#Cube-carousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+
+                    <div style="height:1px;width:100%; background-color:hsl(0,0%,90%);margin-bottom:1vh;"></div>
+                    <div class="modal-text">
+                      Cubestrophobia is a 3D Platformer created for Ludum Dare 37. Players have to collect green "Keys" while avoiding
+                      red cubes and maneuvering around an ever changing room.
+                    </div>
+                  </div>
+                  <div class="modal-footer center" style="width:100%; justify-content:space-between; ">
+                    <a href="http://ludumdare.com/compo/ludum-dare-37/?action=preview&uid=34658" class="modal-a">
+                      <button type="button" class="btn btn-default center modal-button">Ludum Dare</button>
+                    </a>
+
+                    <a href="https://github.com/MarshallPelissier/Ludum-Dare-37" class="modal-a">
+                      <button type="button" class="btn btn-primary center modal-button">Github</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="btn btn-default card center" data-toggle="modal" data-target="#FDModal">
+              Feelin N Dealin
+            </button>
+
+            <!-- FD Modal -->
+            <div class="modal fade" id="FDModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog " role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title title" id="myModalLabel">Feelin N Dealin</h4>
+                  </div>
+                  <div class="modal-body" style="padding:0;">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"style="max-height:35vh;max-width:65vh;margin:0 auto;">
+
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                          <img src="img/fnd.png" alt="..."style="max-height:35vh;max-width:65vh;margin:0 auto;">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div style="height:1px;width:100%; background-color:hsl(0,0%,90%);margin-bottom:1vh;"></div>
+                    <div class="modal-text">
+                      Feelin N Dealin was created for "Ludum Dare 29", the first game jam I participated in. It is a simple side
+                      scroller set in the sewers, as you progress through the game you can buy cosmetic items for your base.
+                    </div>
+                  </div>
+                  <div class="modal-footer center" style="width:100%; justify-content:space-between; ">
+                    <a href="http://ludumdare.com/compo/ludum-dare-29/?action=preview&uid=34809" class="modal-a">
+                      <button type="button" class="btn btn-default center modal-button">Ludum Dare</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="btn btn-default card center" data-toggle="modal" data-target="#WDModal">
+              Wheelin N Stealin
+            </button>
+
+            <!-- WS Modal -->
+            <div class="modal fade" id="WDModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog " role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title title" id="myModalLabel">Wheelin N Stealin</h4>
+                  </div>
+                  <div class="modal-body" style="padding:0;">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"style="max-height:35vh;max-width:65vh;margin:0 auto;">
+
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                          <img src="img/wns.png" alt="..."style="max-height:35vh;max-width:65vh;margin:0 auto;">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div style="height:1px;width:100%; background-color:hsl(0,0%,90%);margin-bottom:1vh;"></div>
+                    <div class="modal-text">
+                      Wheelin N Stealin is the spiritual successor to Feelin N Dealin created for the "Gamejolt GameBoy Jam 3".
+                      This time we created a top down driving game featuring the same money mechanics from the first game.
+                    </div>
+                  </div>
+                  <div class="modal-footer center" style="width:100%; justify-content:space-between; ">
+                    <a href="http://jams.gamejolt.io/gbjam3/games/wheelin-n-stealin/31940" class="modal-a">
+                      <button type="button" class="btn btn-default center modal-button">Game Jolt</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="btn btn-default card center" data-toggle="modal" data-target="#TEIFModal">
+              The Earth is Flat
+            </button>
+
+            <!-- TEIF Modal -->
+            <div class="modal fade" id="TEIFModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog " role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title title" id="myModalLabel">The Earth is Flat</h4>
+                  </div>
+                  <div class="modal-body" style="padding:0;">
+                    <div id="TEIF-carousel" class="carousel slide" data-ride="carousel"style="max-height:35vh;max-width:65vh;">
+                      <!-- Indicators -->
+                      <ol class="carousel-indicators">
+                        <li data-target="#TEIF-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#TEIF-carousel" data-slide-to="1"></li>
+                        <li data-target="#TEIF-carousel" data-slide-to="2"></li>
+                      </ol>
+
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                          <img src="img/teif_1.png" alt="...">
+                        </div>
+                        <div class="item" >
+                          <img src="img/teif_2.png" alt="...">
+                        </div>
+                        <div class="item" >
+                          <img src="img/teif_3.png" alt="...">
+                        </div>
+                      </div>
+
+                      <!-- Controls -->
+                      <a class="left carousel-control" href="#TEIF-carousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right carousel-control" href="#TEIF-carousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+
+                    <div style="height:1px;width:100%; background-color:hsl(0,0%,90%);margin-bottom:1vh;"></div>
+                    <div class="modal-text">
+                      The Earth is Flat was created for the 38th Ludum Dare game jam.
+                      We created a game where players control an ice wall to keep people from falling off the flat earth.
+                    </div>
+                  </div>
+                  <div class="modal-footer center" style="width:100%; justify-content:space-between; ">
+                    <a href="https://ldjam.com/events/ludum-dare/38/the-earth-is-flat" class="modal-a">
+                      <button type="button" class="btn btn-default center modal-button">Ludum Dare</button>
+                    </a>
+
+                    <a href="https://github.com/T17HeavyIndustries/ld-38" class="modal-a">
+                      <button type="button" class="btn btn-primary center modal-button">Github</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="btn btn-default card center" data-toggle="modal" data-target="#MRModal">
+              Maze Racer [WIP]
+            </button>
+
+            <!-- TEIF Modal -->
+            <div class="modal fade" id="MRModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog " role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title title" id="myModalLabel">Maze Racer [WIP]</h4>
+                  </div>
+                  <div class="modal-body" style="padding:0;">
+
+                    <div class="modal-text">
+                      Mazer Racer is a game we have been working on semi-frequently for a few years.
+                      The game has evolved to be a procedurally generated racing game where players
+                      wall jump and double jump around a random course. Hopefully more to come in the future.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-2 col-md-3"></div>
+        </div>
+
+        <div class="row center" style="height:100%; max-height:15vh;">
+          <div class="col-xs-5 col-md-3" style="display:flex; justify-content:space-around">
+            <div class="btn btn-default button-main" style="height:5vh; width:7vmax; font-size: 1vmax; display:flex; justify-content:center; align-items:center;">
+              Main
+            </div>
+            <div class="btn btn-default button-Project" style="height:5vh; width:7vmax; font-size: 1vmax; display:flex; justify-content:center; align-items:center;">
+              Projects
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="row">
+        <div class="bottom-bar">
+          <a href="https://github.com/MarshallPelissier" class="bottom-button">
+            <button type="button" class="btn btn-primary " style="background-color: hsl(185,20%,30%);">Github</button>
+          </a>
+
+          <a href="mailto:pelissierm@spu.edu" class="bottom-button">
+            <button type="button" class="btn btn-primary " style="background-color: hsl(185,20%,30%)">Email</button>
+          </a>
+        </div>
+      </div>
+
+
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Bootstrap-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+    integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+    crossorigin="anonymous"></script>
+
+    <!-- tabs ,dark and mobile -->
+    <script src="js/index.js"></script>
+
+  </body>
+</html>
