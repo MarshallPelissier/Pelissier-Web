@@ -20,8 +20,8 @@
 
       <!-- Main Page -->
 
-      <div class="container-fluid row page" id="Main" style="">
-        <div class="row" style="height:100%; max-height:25vh;"></div>
+      <div class="container-fluid row page" id="Main" style="max-height: 100vh;">
+        <div class="row" style="height:100%; max-height:15vh;"></div>
 
         <div class="row" style="flex-grow: 2; max-height:65vh;" >
           <div class="col-xs-1 col-md-2"></div>
@@ -62,10 +62,10 @@
 
 
       <!-- Project Page -->
-      <div class="container-fluid row page hide" id="Project" style="height:100%;">
+      <div class="container-fluid row page hide" id="Project" style="overflow-y:auto;">
         <div class="row hide" style="height:100%; max-height:15vh;"></div>
 
-        <div class="row center" style="flex-grow: 2; max-height:65vh; padding-top:2.25vh; padding-bottom:2.25vh;" >
+        <div class="row center" style="flex-grow: 2; max-height:65vh; min-height:15vh; padding-top:2.25vh; padding-bottom:2.25vh;" >
           <div class="col-xs-1 col-md-2"></div>
 
           <div class="col-xs-10 col-md-8 ">
@@ -85,7 +85,7 @@
           <div class="col-xs-8 col-md-6" style="display:flex; flex-wrap: wrap; justify-content:space-around;">
             <button type="button" class="btn btn-default card center" data-toggle="modal" data-target="#VLModal" style="flex-direction:column">
               <div>
-                <img src="img/VL_logo.png" style="width:7vh;height:7vh;">
+                <img src="img/VL_logo.png" style="width:7vmin;height:7vmin;">
               </div>
               <div style="font-size:2.5vmin">
                 Video Locale
@@ -112,10 +112,10 @@
                       <!-- Wrapper for slides -->
                       <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                          <img src="img/VL_main.jpg" alt="...">
+                          <img class="modal-image"src="img/VL_main.jpg" alt="...">
                         </div>
                         <div class="item" >
-                          <img src="img/VL_playlist.jpg" alt="...">
+                          <img class="modal-image"src="img/VL_playlist.jpg" alt="...">
                         </div>
                       </div>
 
@@ -162,7 +162,7 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title title" id="myModalLabel">Personal Website</h4>
                   </div>
-                  <div class="modal-body" style="padding:0;">
+                  <div class="modal-body center" style="padding:0;">
                     <div class="modal-text">
                       I created this website to display the projects I have worked on and completed.
                       I enjoy web development and creating video games.
@@ -170,6 +170,9 @@
                     </div>
                   </div>
                   <div class="modal-footer center" style="width:100%; justify-content:space-between; ">
+                    <a href="http://marshallpelissier.com/2016-07-16/index.html" class="modal-a">
+                      <button type="button" class="btn btn-default center modal-button">Previous Version</button>
+                    </a>
                     <a href="https://github.com/MarshallPelissier/Pelissier-Web" class="modal-a">
                       <button type="button" class="btn btn-primary center modal-button">Github</button>
                     </a>
@@ -190,13 +193,13 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title title" id="myModalLabel">NBA Live 95 Edit</h4>
                   </div>
-                  <div class="modal-body" style="padding:0;">
+                  <div class="modal-body center" style="padding:0;">
                     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"style="max-height:35vh;max-width:65vh;margin:0 auto;">
 
                       <!-- Wrapper for slides -->
                       <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                          <img src="img/nbalive95.gif" alt="..."style="max-height:35vh;max-width:65vh;margin:0 auto;">
+                          <img class="modal-image"src="img/nbalive95.gif" alt="..."style="max-height:35vh;max-width:65vh;margin:0 auto;">
                         </div>
                       </div>
                     </div>
@@ -230,13 +233,13 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title title" id="myModalLabel">Stock Quotes Website</h4>
                   </div>
-                  <div class="modal-body" style="padding:0;">
+                  <div class="modal-body center" style="padding:0;">
                     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"style="max-height:35vh;max-width:65vh;margin:0 auto;">
 
                       <!-- Wrapper for slides -->
                       <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                          <img src="img/stockquotes.png" alt="..."style="max-height:35vh;max-width:65vh;margin:0 auto;">
+                          <img class="modal-image"src="img/stockquotes.png" alt="..."style="max-height:35vh;max-width:65vh;margin:0 auto;">
                         </div>
                       </div>
                     </div>
@@ -259,12 +262,12 @@
           <div class="col-xs-2 col-md-3"></div>
         </div>
 
-        <div class="row center" style="height:100%; max-height:15vh;">
-          <div class="col-xs-5 col-md-3" style="display:flex; justify-content:space-around">
-            <div class="btn btn-default button-main" style="height:5vh; width:7vmax; font-size: 1vmax; display:flex; justify-content:center; align-items:center;">
+        <div class="row center" style="height:100%; max-height:15vh; min-height:10vh;">
+          <div class="col-xs-8 col-md-3" style="display:flex; justify-content:space-around">
+            <div class="btn btn-default button-main" style="height:5vh; width:14vh; font-size: 2.5vh; display:flex; justify-content:center; align-items:center;">
               Main
             </div>
-            <div class="btn btn-default button-game" style="height:5vh; width:7vmax; font-size: 1vmax; display:flex; justify-content:center; align-items:center;">
+            <div class="btn btn-default button-game" style="height:5vh; width:14vh; font-size: 2.5vh; display:flex; justify-content:center; align-items:center;">
               Games
             </div>
           </div>
@@ -272,10 +275,10 @@
       </div>
 
       <!-- Game Page -->
-      <div class="container-fluid row page hide" id="Game" style="height:100%;">
-        <div class="row hide" style="height:100%; max-height:15vh;"></div>
+      <div class="container-fluid row page hide" id="Game" style="overflow-y:auto;">
+        <div class="row hide" style="height:5vh; max-height:15vh;"></div>
 
-        <div class="row center" style="flex-grow: 2; max-height:65vh; padding-top:2.25vh; padding-bottom:2.25vh;" >
+        <div class="row center" style="flex-grow: 2; max-height:65vh; min-height:15vh; padding-top:2.25vh; padding-bottom:2.25vh;" >
           <div class="col-xs-1 col-md-2"></div>
 
           <div class="col-xs-10 col-md-8 ">
@@ -303,33 +306,33 @@
                 <div class="modal-content">
                   <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title title" id="myModalLabel" style="font-size:5vmin; font-weight:bpld;">Video Locale</h4>
+                    <h4 class="modal-title title" id="myModalLabel" style="font-size:5vmin; font-weight:bpld;">Back and Forth</h4>
                   </div>
                   <div class="modal-body center" style="padding:0;flex-direction:column;">
 
-                    <div id="BF-carousel" class="carousel slide" data-ride="carousel"style="max-height:35vh;max-width:65vh;">
+                    <div id="PT-carousel" class="carousel slide" data-ride="carousel"style="max-height:35vh;max-width:65vh;">
                       <!-- Indicators -->
                       <ol class="carousel-indicators">
-                        <li data-target="#BF-carousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#BF-carousel" data-slide-to="1"></li>
+                        <li data-target="#PT-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#PT-carousel" data-slide-to="1"></li>
                       </ol>
 
                       <!-- Wrapper for slides -->
                       <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                          <img src="img/baf1.png" alt="...">
+                          <img class="modal-image"src="img/baf1.png" alt="...">
                         </div>
                         <div class="item" >
-                          <img src="img/baf2.png" alt="...">
+                          <img class="modal-image"src="img/baf2.png" alt="...">
                         </div>
                       </div>
 
                       <!-- Controls -->
-                      <a class="left carousel-control" href="#BF-carousel" role="button" data-slide="prev">
+                      <a class="left carousel-control" href="#PT-carousel" role="button" data-slide="prev">
                         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                       </a>
-                      <a class="right carousel-control" href="#BF-carousel" role="button" data-slide="next">
+                      <a class="right carousel-control" href="#PT-carousel" role="button" data-slide="next">
                         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                       </a>
@@ -370,7 +373,7 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title title" id="myModalLabel">Puzzel Tower</h4>
                   </div>
-                  <div class="modal-body" style="padding:0;">
+                  <div class="modal-body center" style="padding:0;">
                     <div id="PT-carousel" class="carousel slide" data-ride="carousel"style="max-height:35vh;max-width:65vh;">
                       <!-- Indicators -->
                       <ol class="carousel-indicators">
@@ -382,13 +385,13 @@
                       <!-- Wrapper for slides -->
                       <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                          <img src="img/PT_1.jpg" alt="...">
+                          <img class="modal-image"src="img/PT_1.jpg" alt="...">
                         </div>
                         <div class="item" >
-                          <img src="img/PT_2.jpg" alt="...">
+                          <img class="modal-image"src="img/PT_2.jpg" alt="...">
                         </div>
                         <div class="item" >
-                          <img src="img/PT_3.jpg" alt="...">
+                          <img class="modal-image"src="img/PT_3.jpg" alt="...">
                         </div>
                       </div>
 
@@ -432,7 +435,7 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title title" id="myModalLabel">Cubestrophobia</h4>
                   </div>
-                  <div class="modal-body" style="padding:0;">
+                  <div class="modal-body center" style="padding:0;">
                     <div id="Cube-carousel" class="carousel slide" data-ride="carousel"style="max-height:35vh;max-width:65vh;">
                       <!-- Indicators -->
                       <ol class="carousel-indicators">
@@ -444,13 +447,13 @@
                       <!-- Wrapper for slides -->
                       <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                          <img src="img/Cube_1.jpg" alt="...">
+                          <img class="modal-image"src="img/Cube_1.jpg" alt="...">
                         </div>
                         <div class="item" >
-                          <img src="img/Cube_2.jpg" alt="...">
+                          <img class="modal-image"src="img/Cube_2.jpg" alt="...">
                         </div>
                         <div class="item" >
-                          <img src="img/Cube_3.jpg" alt="...">
+                          <img class="modal-image"src="img/Cube_3.jpg" alt="...">
                         </div>
                       </div>
 
@@ -496,13 +499,13 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title title" id="myModalLabel">Feelin N Dealin</h4>
                   </div>
-                  <div class="modal-body" style="padding:0;">
+                  <div class="modal-body center" style="padding:0;">
                     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"style="max-height:35vh;max-width:65vh;margin:0 auto;">
 
                       <!-- Wrapper for slides -->
                       <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                          <img src="img/fnd.jpg" alt="..."style="max-height:35vh;max-width:65vh;margin:0 auto;">
+                          <img class="modal-image"src="img/fnd.jpg" alt="..."style="max-height:35vh;max-width:65vh;margin:0 auto;">
                         </div>
                       </div>
                     </div>
@@ -534,13 +537,13 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title title" id="myModalLabel">Wheelin N Stealin</h4>
                   </div>
-                  <div class="modal-body" style="padding:0;">
+                  <div class="modal-body center" style="padding:0;">
                     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"style="max-height:35vh;max-width:65vh;margin:0 auto;">
 
                       <!-- Wrapper for slides -->
                       <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                          <img src="img/wns.png" alt="..."style="max-height:35vh;max-width:65vh;margin:0 auto;">
+                          <img class="modal-image"src="img/wns.png" alt="..."style="max-height:35vh;max-width:65vh;margin:0 auto;">
                         </div>
                       </div>
                     </div>
@@ -572,7 +575,7 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title title" id="myModalLabel">The Earth is Flat</h4>
                   </div>
-                  <div class="modal-body" style="padding:0;">
+                  <div class="modal-body center" style="padding:0;">
                     <div id="TEIF-carousel" class="carousel slide" data-ride="carousel"style="max-height:35vh;max-width:65vh;">
                       <!-- Indicators -->
                       <ol class="carousel-indicators">
@@ -584,13 +587,13 @@
                       <!-- Wrapper for slides -->
                       <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                          <img src="img/teif_1.jpg" alt="...">
+                          <img class="modal-image"src="img/teif_1.jpg" alt="...">
                         </div>
                         <div class="item" >
-                          <img src="img/teif_2.jpg" alt="...">
+                          <img class="modal-image"src="img/teif_2.jpg" alt="...">
                         </div>
                         <div class="item" >
-                          <img src="img/teif_3.jpg" alt="...">
+                          <img class="modal-image"src="img/teif_3.jpg" alt="...">
                         </div>
                       </div>
 
@@ -636,7 +639,7 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title title" id="myModalLabel">Maze Racer [WIP]</h4>
                   </div>
-                  <div class="modal-body" style="padding:0;">
+                  <div class="modal-body center" style="padding:0;">
 
                     <div class="modal-text">
                       Mazer Racer is a game we have been working on semi-frequently for a few years.
@@ -652,12 +655,12 @@
           <div class="col-xs-2 col-md-3"></div>
         </div>
 
-        <div class="row center" style="height:100%; max-height:15vh;">
-          <div class="col-xs-5 col-md-3" style="display:flex; justify-content:space-around">
-            <div class="btn btn-default button-main" style="height:5vh; width:7vmax; font-size: 1vmax; display:flex; justify-content:center; align-items:center;">
+        <div class="row center" style="height:100%; max-height:15vh; min-height: 10vh;">
+          <div class="col-xs-8 col-md-3" style="display:flex; justify-content:space-around">
+            <div class="btn btn-default button-main" style="height:5vh; width:14vh; font-size: 2.5vh; display:flex; justify-content:center; align-items:center;">
               Main
             </div>
-            <div class="btn btn-default button-Project" style="height:5vh; width:7vmax; font-size: 1vmax; display:flex; justify-content:center; align-items:center;">
+            <div class="btn btn-default button-Project" style="height:5vh; width:14vh; font-size: 2.5vh; display:flex; justify-content:center; align-items:center;">
               Projects
             </div>
           </div>
@@ -676,7 +679,7 @@
           </a>
         </div>
       </div>
-
+    </div>
 
 
     <!-- JQuery -->
